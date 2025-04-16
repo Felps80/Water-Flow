@@ -2,38 +2,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Variáveis de Movimento
     [SerializeField] private float velh = 5f;
     [SerializeField] private float velv = 8f;
 
     [SerializeField] private float gravidade = 2f;
     [SerializeField] private float multiplicadorDeQueda = 2f;
-    [SerializeField] private float multiplicadorDePulo = 0.3f;
+    // [SerializeField] private float multiplicadorDePulo = 0.3f; // REMOVIDO para pulo fixo
 
     [SerializeField] private int totalPulos = 1;
     [SerializeField] private int pulos = 1;
+    #endregion
 
+    #region Variáveis de Dash
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 1f;
 
+    private float lastDashTime;
+    private bool isDashing;
+    private Vector2 dashDirection;
+    #endregion
+
+    #region Variáveis de Correnteza
     [SerializeField] private float forcaEmpurraoHorizontal = 3f;
     [SerializeField] private float forcaEmpurraoVertical = 3f;
 
     private float tempoDesaceleracaoVertical = 0.3f;
     private float desaceleracaoTimer = 0f;
     private bool desacelerandoVertical = false;
-
-    float speedAtual;
-    float speedVatual;
-
-    private Rigidbody2D meuRB;
-    private Animator meuAnim;
-
-    private float lastDashTime;
-    private bool isDashing;
-    private Vector2 dashDirection;
-
-    private bool noChao = false;
 
     private bool emAwaHorizontal = false;
     private bool emAwaVertical = false;
@@ -44,11 +41,23 @@ public class PlayerController : MonoBehaviour
     private bool awaHEs = false;
     private bool awaVSub = false;
     private bool awaVBai = false;
+    #endregion
 
+    #region Estado
+    private float speedAtual;
+    private float speedVatual;
+
+    private Rigidbody2D meuRB;
+    private Animator meuAnim;
+
+    private bool noChao = false;
+    #endregion
+
+    #region Mobile
     public JoystickController joystick;
-
     private bool puloMobile = false;
     private bool dashMobile = false;
+    #endregion
 
     void Start()
     {
@@ -60,6 +69,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        #region Controle Geral
         bool emCorrentezaHorizontal = emAwaHorizontal || awaHDir || awaHEs;
         bool emCorrentezaVertical = emAwaVertical || awaVSub || awaVBai;
         bool podeControlar = !isDashing && !emCorrentezaHorizontal && !emCorrentezaVertical;
@@ -70,8 +80,10 @@ public class PlayerController : MonoBehaviour
             Pulando();
             CheckDash();
         }
+        #endregion
 
-        // Correntezas horizontais
+        #region Correntezas
+        // Horizontais
         if (emAwaHorizontal)
         {
             meuRB.velocity = new Vector2(forcaEmpurraoHorizontal * direcaoEmpurraoHorizontal, meuRB.velocity.y);
@@ -88,7 +100,7 @@ public class PlayerController : MonoBehaviour
             meuRB.gravityScale = 0f;
         }
 
-        // Correntezas verticais
+        // Verticais
         if (emAwaVertical)
         {
             meuRB.gravityScale = -gravidade * direcaoEmpurraoVertical;
@@ -101,23 +113,23 @@ public class PlayerController : MonoBehaviour
         {
             meuRB.gravityScale = gravidade;
         }
+        #endregion
 
-        // Gravidade normal
+        #region Gravidade
         if (!emCorrentezaVertical && !emCorrentezaHorizontal && !noChao && !isDashing)
         {
             if (meuRB.velocity.y < 0)
                 meuRB.gravityScale = gravidade * multiplicadorDeQueda;
-            else if (meuRB.velocity.y > 0 && !Input.GetButton("Jump"))
-                meuRB.gravityScale = gravidade * multiplicadorDePulo;
             else
-                meuRB.gravityScale = gravidade;
+                meuRB.gravityScale = gravidade; // Pulo fixo: não modifica gravidade ao soltar botão
         }
         else if (noChao)
         {
             meuRB.gravityScale = 0f;
         }
+        #endregion
 
-        // Desaceleração vertical
+        #region Desaceleração Vertical
         if (desacelerandoVertical)
         {
             desaceleracaoTimer += Time.deltaTime;
@@ -131,20 +143,19 @@ public class PlayerController : MonoBehaviour
                 meuRB.gravityScale = gravidade;
             }
         }
+        #endregion
     }
 
+    #region Movimento
     private void Movendo()
     {
         if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai) return;
 
         float horizontal = Input.GetAxis("Horizontal");
 
-        if (joystick != null)
+        if (joystick != null && Mathf.Abs(joystick.Horizontal) > 0.2f)
         {
-            if (Mathf.Abs(joystick.Horizontal) > 0.2f)
-            {
-                horizontal = joystick.Horizontal;
-            }
+            horizontal = joystick.Horizontal;
         }
 
         float movimento = horizontal * speedAtual;
@@ -171,7 +182,9 @@ public class PlayerController : MonoBehaviour
             puloMobile = false;
         }
     }
+    #endregion
 
+    #region Dash
     private void CheckDash()
     {
         if (emAwaVertical || emAwaHorizontal || awaHDir || awaHEs || awaVSub || awaVBai) return;
@@ -181,13 +194,10 @@ public class PlayerController : MonoBehaviour
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
 
-            if (joystick != null)
+            if (joystick != null && (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f))
             {
-                if (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f)
-                {
-                    moveX = joystick.Horizontal;
-                    moveY = joystick.Vertical;
-                }
+                moveX = joystick.Horizontal;
+                moveY = joystick.Vertical;
             }
 
             if (moveX != 0 || moveY != 0)
@@ -217,7 +227,9 @@ public class PlayerController : MonoBehaviour
         direcaoEmpurraoHorizontal *= -1;
         direcaoEmpurraoVertical *= -1;
     }
+    #endregion
 
+    #region Colisões
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("chao"))
@@ -262,8 +274,9 @@ public class PlayerController : MonoBehaviour
             desaceleracaoTimer = 0f;
         }
     }
+    #endregion
 
-    // Botões mobile
+    #region Controles Mobile
     public void PularMobile()
     {
         puloMobile = true;
@@ -273,4 +286,5 @@ public class PlayerController : MonoBehaviour
     {
         dashMobile = true;
     }
+    #endregion
 }
