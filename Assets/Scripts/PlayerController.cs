@@ -329,7 +329,8 @@ public class PlayerController : MonoBehaviour
     // Método que utiliza Raycast para detectar se o personagem está no chão.
     private void RaycastCheckGround()
     {
-        Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - playerCollider.bounds.extents.y + 0.01f);
+        // Define a origem utilizando a borda inferior central do BoxCollider2D
+        Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
 
         if (hit.collider != null && meuRB.velocity.y <= 0)
@@ -347,13 +348,14 @@ public class PlayerController : MonoBehaviour
             noChao = false;
             meuAnim.SetBool("NoChao", false);
         }
+
     }
 
     private void OnDrawGizmosSelected()
     {
         if (playerCollider != null)
         {
-            Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - playerCollider.bounds.extents.y + 0.01f);
+            Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
             Gizmos.color = Color.red;
             Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
         }
