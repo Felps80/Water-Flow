@@ -1,0 +1,7427 @@
+fileFormatVersion: 2
+guid: 85f56799c96036c44801faafcefd5254
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5960662821b2253409e5480768b4dc46
+      internalID: -209694003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4be721063a853f4780c16c8a3c575f2
+      internalID: 1879971838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1ce7f23cbac3445ad11fae2c02f12b
+      internalID: -1764301803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9bcb2b0bab19a4ca013c1e762be405
+      internalID: -1336794531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135b7e8765b05044bbe6ddedd4477f8e
+      internalID: 1284662217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814c0c654d426d841b225057fac0e2a5
+      internalID: -257341498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc62d4927a37004f9f2ab2bd335d0a8
+      internalID: 838252471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e99074c7e4c9604bb62a2b6a831718d
+      internalID: -2146591173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34485e648847d264ca8ffecd9e115cf4
+      internalID: 988231978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea2eb24b90b7634593cbb1e5702bed0
+      internalID: 1187437768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d38af2cfd41bd4da371fa6ab5ef063
+      internalID: -809708923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a155031450ed1574fbdb9fd5b0925885
+      internalID: 1675568975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6102e28fa97aecf468207d6accf6c557
+      internalID: -1238294714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6fc029229d5d940b8f8a4eee7bbaa2
+      internalID: -1840307799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e34231967e887e428215b4a5cea5569
+      internalID: 709047569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d9f8590d4455f48b9c230c342ca924
+      internalID: -780477885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72009a6a0fe987a46990477a4bb7ae5d
+      internalID: -276290191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cda0a43a9323a4686f608ce48a8d9d
+      internalID: 1926130309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_18
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eb049b6c9a3764f8519b5aa1c53fef
+      internalID: -710297520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c63360149b109448bef6c6ac8128a4f
+      internalID: 1243810088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_20
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0f5f83ab9ead543ba0915d257d0293
+      internalID: -1901058101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66265befe0285447a65388c729d49f7
+      internalID: 1367632850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_22
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c51b57beaf90543a2a41363b9d3c4a
+      internalID: 1470464521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08ea4a8b07083c48a3ec5270baab86a
+      internalID: -1049157968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_24
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3689f617f460f4ea7e5e453c67544b
+      internalID: -1943161856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_25
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1b5eb3382d0b74f98859b15caed7fe
+      internalID: 859685412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_26
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edafdd0a370c3a44b09d16771a5d9c1
+      internalID: 756984691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_27
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f91f5ec7ecf12c4ebf1986279f19536
+      internalID: -441734402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_28
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c982dab5d0562c45a07cd5d4b653f7c
+      internalID: 702036183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_29
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5114a23ff85a67d40a3b6051aacb1127
+      internalID: -1880070332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b0474bbc529be469ecdf009de2d21a
+      internalID: -1919779532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93566271b0885b14fb58085729d03e2e
+      internalID: -2047790073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244aa5e240d06974188976235acf4a05
+      internalID: -889348418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64e6dd59c405af4a9119d8b53dcc1cc
+      internalID: 1626904986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1d3244e508b4848a74797558a9884f
+      internalID: -489800230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bc25df1222f4641b79e7f970c97ab0
+      internalID: -2001882988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_36
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf2626f8f8eb0b478958e0bdd85ed6a
+      internalID: 427608438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c6d0566cc6f8c42967a895549a528f
+      internalID: 469908338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d78dc058b631c4b8da42ae9a7263a8
+      internalID: -114792701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bc9195a4be27f49a4402fa119cb868
+      internalID: 1261561756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbc55e0da0b83345a62f0f90a0d67e4
+      internalID: -882447531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_41
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ba40aaba23d0a4e9b6bd1ec1f86a68
+      internalID: 903169155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a76d4663d53ce4aa3a48c8ae66b1a3
+      internalID: 2024814662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fb8e305e7112340887f129e7cb7d52
+      internalID: 2065884606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_44
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce4c29e90c61c64a8a2dfbcad2aa8f8
+      internalID: 222109550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07626e1430b344e4ca56b95cddab84a7
+      internalID: -1471557214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_46
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d82379d42812c42af491899d860508
+      internalID: 709969126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_47
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c92851be7d029a4ebd67880e1234ef3
+      internalID: 2130371474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a6ccff9426de9448c65f90d2c30224
+      internalID: 1296382512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_49
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4734d29109615c64086f0294188a8087
+      internalID: 240822421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_50
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c737c2906b4940b2f121c17217722
+      internalID: -1792929836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_51
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98556f5bc0be3143b1bfa7ef8f4668f
+      internalID: 1421142301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_52
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f650bb4978cb64a8b71b558d9a3454
+      internalID: 1049490289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_53
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99062eab9b233645a202b7a8221d163
+      internalID: 1742564021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fce717be351fc2468e60338d8d83bf2
+      internalID: -323235843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f5c4c762db600489fbead6dda5df10
+      internalID: -1815317834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9351dc585adc746488a35fd8b929150d
+      internalID: -612001741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637c79127944e0c47b976061761eda63
+      internalID: -158855715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b53d5917a8620a4c94e5bfc059bce73
+      internalID: -1042726454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352d26a09516a384086363148a0c2c7d
+      internalID: -996563402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_60
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc53db7dc4a0a64d9783b67d64d0560
+      internalID: -1865670501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_61
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cadddd539742948bb7403b9acaca6e
+      internalID: 209463956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_62
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d68ccdd74674c47bb1964aa0c58f93
+      internalID: -363319106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_63
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd06967a7b35b094288785ad5d6ab1f2
+      internalID: 2004067031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_64
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9168def5a33ff084ca9028e13f50d860
+      internalID: -1013745376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_65
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4970ae87ea8df41b0d21c1955752c1
+      internalID: 1387626392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_66
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291d886afb8460644b406c437a65a20c
+      internalID: 476747398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8dce9dd4cbecd458ccc48b3e389534
+      internalID: 683665465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6242819855bbe4f9c4ed0c19163219
+      internalID: 774164694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dc7ade3fad9404d83064be03530218
+      internalID: -974323635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_70
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2653b2b4fe0f16e499cb673a73f436d1
+      internalID: 1087033183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_71
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0ffc43c25aecf47ba2b82bfefd3690
+      internalID: -1046062841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd9bc5d76fd18244b50970fa0d88dc8
+      internalID: -366916215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779954ab104369e489aa5bf4336e2ab7
+      internalID: -940048927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b875f2e6a5e07c4aa37dbed7359e9ec
+      internalID: -1637681680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_75
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf96bb7feb88d9148b6a5a31b860bd09
+      internalID: 1012300609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e882665c6d6d4f149a6e7c3071091df0
+      internalID: -1484566878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_77
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f07b2150011c694e9ce3e5b008a3c33
+      internalID: -114486612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_78
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1857996700855dd42a38344f07f378e2
+      internalID: -220082433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_79
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8fc81425fc39248b992c206d1aaa02
+      internalID: -1638661463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff74f9ed2555a174c86b6f80052ef15c
+      internalID: -1172281347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192d73cbb5fe5974488ae7ea514297a0
+      internalID: 1338724055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c952a7e2dec04a34f85fbf97fc59d25e
+      internalID: -58058539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_83
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c22824398f02145904fc4c6d350bbf
+      internalID: -1562923099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4726cdad9924512419836adbfc2ef289
+      internalID: -1419576985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa40080cbd0868346a9b9619fd8afec0
+      internalID: 945719865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa01cbf9f2227240b50a49216a33544
+      internalID: 276758864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_87
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20857ce3463c1c4c891ad4306fa0f84
+      internalID: 1508282265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_88
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858e099e15fc62e49bb6944557ea00c6
+      internalID: 365987657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_89
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0a67c6ebccca441b2be88254c0d969
+      internalID: -1249825962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c354e2413d5e3c49963ca42f146ef09
+      internalID: 421451360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_91
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7113424284568a543a32343fd62d82f2
+      internalID: 1278904889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2cdb5f7e02ef2449ed845232618f84
+      internalID: -187125352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_93
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aedc735cd1bc514dae5893025f661d7
+      internalID: -1063808249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_94
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697af3f165e10454598fd2dbd757a9ed
+      internalID: -1253980828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_95
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c67344871f292a44b89cfce41172a15
+      internalID: -137988358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3875c74e800b60489f66fb53cf32dde
+      internalID: -542868780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_97
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a230a29d3b281394187ca50ac94ca90b
+      internalID: -1681257680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_98
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc4aae887f50954cbcf68f8a59c082e
+      internalID: -913092109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_99
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54362aa046e95474f80277982e0acd0b
+      internalID: -964116556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_100
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3040
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ebbb3c190182c449f659787381f95e
+      internalID: 1424728438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb24db3df5ab354bbc5ea039ab53da2
+      internalID: -1861549745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_102
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c145d53595741e48ae945d9992afa29
+      internalID: -12452548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b31669ae5ccf1419360a95ee59827e
+      internalID: -1928874040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_104
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d8188fa316d5e40906c0c98328654f
+      internalID: 2002012724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_105
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b8c6c02e643a64aa31c5b5836973b1
+      internalID: 301388948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_106
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3008
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ad0ee99be854943817ee0c4e61a713
+      internalID: -2005343587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbba29f5a5ab3174f92f64eba9ba9cf2
+      internalID: -1433807230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_108
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96a2e3e1d54dbe458d6030396cbc4a9
+      internalID: 1546089343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d6a1cb6cf429646993786309635b77
+      internalID: 1990899997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_110
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2db552acaf60c49ad23db921c5bd1c
+      internalID: -1523630921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d516a68228154940bb71e5323e89879
+      internalID: 353244936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_112
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25809b023a070ea44a08c3c4fd1b62ca
+      internalID: 2057537218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_113
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3e3065cf051c144ada63f81c313f25
+      internalID: 2049610572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_114
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7e19bbbf0a8d549879a02cc4827179
+      internalID: -210150094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_115
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d4d5ce705af714aa8e867ad59dd02c
+      internalID: 1561137988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_116
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eb962933def594b8d6cdf6468765e2
+      internalID: 1177832727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_117
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8b6451f82ae4b4eb80a0652d6baae7
+      internalID: 1908163947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_118
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51122d0f94a20bd48954363f036a0acf
+      internalID: -24389936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_119
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797daa6d0ddd5254781c970cb5d656d2
+      internalID: 349352963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_120
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9acc68c8400f1e4094d74287d4406f0
+      internalID: 1740994014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_121
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872c3aef176db2948b01b18b1acd0b5f
+      internalID: 1603828136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_122
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486e07c44013ad4e874ad3406191cb1
+      internalID: 497870982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_123
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d81779c85d61949a633a9d715262d6
+      internalID: 1310223065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_124
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80e96a794a6694bb8d2bcec75fc064
+      internalID: 1986482288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_125
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37c7fc5c9d17bc4a92a57531a7eae99
+      internalID: -7629597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_126
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2976
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b8a9fa7835a064f923150402322985
+      internalID: -837381966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_127
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6855858ca4bb0454cbd832db44b21241
+      internalID: -395652820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_128
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67f21a8462f25b4b81eb44d34e8e089
+      internalID: -696289598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_129
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49400ef7970890409859c49044f0469
+      internalID: 2007797395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_130
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8b24df8ee41c146bc9cb45ae6c70a9
+      internalID: 687335943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_131
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12073c3d0fb6a94cb24c173d73f5d12
+      internalID: 920478095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_132
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090299a60eedafd48b2d641d3d2f8fb0
+      internalID: 1010131067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_133
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bd4926273f97f4b89faa0bc2c2ced9
+      internalID: -2096347112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_134
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2944
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243a80e106346a9479b19f99e1b30b69
+      internalID: -135054401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88166d2c6dace604d8167342ccf6b693
+      internalID: -1179904285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_136
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2081377774d51db489e0a3ae4ee0a462
+      internalID: -1853823159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d377c43ed8a394f9a138447a51aabd
+      internalID: 1171170242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_138
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5594d38a5b582484dbce0eaa35005174
+      internalID: 1268776518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_139
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14637102e6874fd48b449fce51a14410
+      internalID: -915399450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_140
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a127fd88d998f994dabd0f6bed3d5ab7
+      internalID: -2077917432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_141
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634517ef90749446b8e7b747567887e
+      internalID: -148502034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_142
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3c8899083158b4084f390a967f71ba
+      internalID: -47050728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_143
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30948b5200012684d925f883714ef5c6
+      internalID: -1546781895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_144
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67369c375b6ce3240b396f4b6df5c2bf
+      internalID: -486837083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_145
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c995e3981771e5747affc6ce977f947a
+      internalID: 118332479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_146
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2912
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5a6669f5c254141ac9aa1e5e27c245
+      internalID: -1320667440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f7c344651d84f4389abf0e600bf32b
+      internalID: 441191606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_148
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13352de84536ca04e9f711cae71476ed
+      internalID: 1132278513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_149
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b65c5c0188f8d48b023d94d449455a
+      internalID: -52370740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2377eac80b3a3d84096fc4665f13f379
+      internalID: -2085970929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_151
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302782b06cd97c546a03fe0ceaa739a7
+      internalID: 11626849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_152
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5295658984a042c4faba4daecfd7e84e
+      internalID: 1426488334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_153
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cf5be219fb9364fa5a1116fd4af6e2
+      internalID: 2032603351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_154
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223601a08fe7a144fbd512b10a9aafa1
+      internalID: -1697874815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_155
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b44bfcbe83f8f4dbafa053cbcd4a93
+      internalID: 1759982398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_156
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbae41b05f0ef3446b296915cb3ace69
+      internalID: -1382294556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_157
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee8d798c80ec8648ad75cd2ed4d2844
+      internalID: 900581777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_158
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d427a1062b1484ba64e9fb61d4e5cb
+      internalID: 640386699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_159
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385109ac90707a745a48e8d160e71313
+      internalID: 783387857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_160
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8aa16c14a52d240acc20997cb8ca72
+      internalID: -734028869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_161
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101db8fb21c53614dac132799917990c
+      internalID: -389853761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_162
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3133518604ec441ab4df398fbb5883
+      internalID: 113371851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_163
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70648d8dd6a475541aa42ef2ed163e8b
+      internalID: -1829548723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_164
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de72a1718ccc7a042ae88c89576727f6
+      internalID: 1318497878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_165
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e19b0f4a2ec945bae85aeca01ad65
+      internalID: -1014278955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_166
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e01b8b2a50ba5a45a81c679c9f0def2
+      internalID: -1166176844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_167
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c02a2b8714f62b4e8144698b6e7bf00
+      internalID: -1158364159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_168
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dd8b94f08db4e4eabf3175d8217fff
+      internalID: 1596733172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_169
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd199e5e85de0946b31e7fd6478e255
+      internalID: 1142768239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_170
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89353b4de34cee640a5176243b84af69
+      internalID: 1591556645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_171
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2880
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d7422307e8696409581f16111099d6
+      internalID: 1360205744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15ae7afd1412c84cb7a5a88201d3927
+      internalID: 1661196559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_173
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80621aa682d7c4c4eb58a4368653fb6f
+      internalID: -1482670706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca7d6bdf739d834095b7ac5c5c1879b
+      internalID: 1615987099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_175
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df1ecd677c9103458ba6d0c130419bf
+      internalID: 920540823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_176
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f023ff65cacf52542a110fbdf627c272
+      internalID: 2086011362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_177
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4055050efe1eb4a98f9f4ee5b316c3
+      internalID: -10654296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_178
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec51adfd8af699846bff83beeec975ff
+      internalID: -723794722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_179
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3272468c2d4fd074c9ccc834d637a43f
+      internalID: -368386620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_180
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d490918b82e815048aacc6f7e0ad4c42
+      internalID: -1939375441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_181
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180f6ede944acd042abf6be84bf4d846
+      internalID: -766235030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_182
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f18d4bfe578da94ca2c70182c72c135
+      internalID: 1228843847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_183
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298873130c73aaf408cc31269c1f4cbd
+      internalID: 242483571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_184
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acff8cde344a6bf4096f3eb340915947
+      internalID: -1923331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_185
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dddaef70820e649ac959d0f53a5299
+      internalID: -1350034609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_186
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f95e10b9ac97a24896b9a49120722de
+      internalID: 882527259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_187
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43e64b21564bb74abe8d699cf0d8786
+      internalID: 897672966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_188
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c3538e28a49f74fb9ce39cafad3e57
+      internalID: -1527656749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_189
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2848
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf9637138729a34fa53082e3f444e97
+      internalID: -1514407426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_190
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a02b56efe7feb4b95021299e49d2c2
+      internalID: -1654473617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_191
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4774c2d0b3bcc43a9dea59e20d6fd0
+      internalID: -795373002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_192
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102d14662f8817e41bf106dc7d7c2aaa
+      internalID: 751283597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_193
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261f6cfadf9335c448d34ebc665a54cc
+      internalID: -1372435403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_194
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1c9810bf5932140b80534b03cb3d2b
+      internalID: -1430272945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_195
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5d21e5961a7d34ebfb9822ca1d8504
+      internalID: 1760850784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_196
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4849ba026a0d0049804c4c8bcbae24d
+      internalID: -1134588376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_197
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e78607558750e944948ac807f701522
+      internalID: -1230379711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_198
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d055ca44cf07c498f7d6b12d8a9873
+      internalID: -1952872902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_199
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c902d4d4d76d4d99ec678e6e99a31
+      internalID: 263387109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_200
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8bdaa3c07a745418e807ada16b48f3
+      internalID: -1524404651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_201
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2784
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1513738904dbc64baa2d3e4862b652d
+      internalID: -312920086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_202
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3bf24e21a69a5428d8894ecedae0b7
+      internalID: 532394664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_203
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556c0fc7df77f594787fb8fab34f869d
+      internalID: 53417668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_204
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9751919bcdf4546ab7b8fd18cedd6f
+      internalID: 1209685454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_205
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d838b81beee3ff14f8865a9137f841e3
+      internalID: -1023568393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_206
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10232bceb7b32224cb99d607c58e1b49
+      internalID: 1444968582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_207
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2752
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a41e65d9c92e1408a1e5e90a2a2d71
+      internalID: 1848008359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ac1259550c4d84bb4ca28c58f06c85
+      internalID: 319777067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_209
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4284e81e76e1c6f4b994ed44efd85096
+      internalID: -756003742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_210
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44e86eb148b65d4ca5e138831d8ece9
+      internalID: -1676287161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_211
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a1ad6510198eb4fbde63c1c6cd1eff
+      internalID: -431718849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_212
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1200ebdf39b77fe47b63257e5ac9e86f
+      internalID: 1985818360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_213
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ccd4d390bf4e44ba4f49519098a9aa
+      internalID: -527070355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_214
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7779bfce3fa1742429e9d5948faf8476
+      internalID: -1423025670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_215
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bd19a0248108547b8f81e64c4b7df6
+      internalID: 1753463419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_216
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f15e4eb822f2c459cc507d283bc767
+      internalID: -1387409339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_217
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacf72d3fc6d15f42a24e7c7531fbc1e
+      internalID: 1795666761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_218
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6d02c02080e234ba6cf5f87ee58a8e
+      internalID: 710787593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_219
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8d82496b00e5f4484e0e65ca957a9e
+      internalID: -2002929556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_220
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ea8c8d824b6974db53f1bc479d336b
+      internalID: -1743769895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_221
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17967cf9cad82ed4090acfd71231b2ac
+      internalID: 1760099144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_222
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0927a85254978c94cb9ee990fac93cba
+      internalID: 1910429286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_223
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ef60e9787e1074cb65db2546a7d7de
+      internalID: -10025072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0876108a67e3fb49bf4c2d2f948001e
+      internalID: 166971555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_225
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c90cb1ad366cb43afbf6278765bfa1
+      internalID: 857767698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_226
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b075587471f70334096d86f8226938d5
+      internalID: -1609154390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_227
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99168d2c86f94774c9d43b488da4ca0c
+      internalID: 663967753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_228
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057bf637fb7d5b1418184267a1ae5bbd
+      internalID: 986861152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_229
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f524c0ca534364298b570be5405d67
+      internalID: -1375875071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_230
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b65210fd6c8540a3cf3a8589a5de3
+      internalID: -1201770735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_231
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdb377ce7fbf4f48a87585f529240ed
+      internalID: -492405217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_232
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62244ac1b2f506c4ebe5975eba4bd912
+      internalID: -2009033960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_233
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee80459b9b867b4f9c9ffd4c7e86cc2
+      internalID: -1370639831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_234
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff42c2b6887a9b43bff066becc63d07
+      internalID: 662564496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_235
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb016f79b8393a4c95f49f703ba2308
+      internalID: -1599209016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_236
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe496825c0eaed47aae04b8dd695ffa
+      internalID: -1422890847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_237
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e983a8b73fc2d94a8be05de67802d4d
+      internalID: -880973797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_238
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aeb4c73da006ca44b91b2d91992329b
+      internalID: 1942359513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_239
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137bda44cbf96a145978de6ae1fd8c6d
+      internalID: 1471713638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_240
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8da862549873f43ae0a67e0ec9b49c
+      internalID: -755094169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_241
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8db87416a27944aab24563d79ee72a
+      internalID: 838188624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_242
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6be4c328fbc7ee4cbf9e8127fabb011
+      internalID: -1413941919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_243
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b17f1b410663f640a0bf56308dd47aa
+      internalID: -1900556508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_244
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7823b83159b53744a1ed1978906d2a7
+      internalID: 54369348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_245
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993d551c8e352b44598adfc55fcaf09b
+      internalID: -419715879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_246
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0f8b3099fcd524faaeca9e4d8bc1dc
+      internalID: 680957936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_247
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83715aee306b6424e895964eac6ec005
+      internalID: -1904487529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_248
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c7f88696b7fd1409f012f358aff790
+      internalID: 1089809279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_249
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8e34da0d1f0c541bf4aa05f265e6a1
+      internalID: -412208471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_250
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d8e65f7d811254c892e966da0506ca
+      internalID: -1122566626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_251
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1fac6eafa288b4488efaf767646aa2
+      internalID: -1995515910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_252
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f32b9629e24c74ea2d814d5a1e053f
+      internalID: 1780097123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_253
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7133d3b176003454c99c20a6946ee1d0
+      internalID: 777093769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_254
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197a5457349e1dd41a767f668601079b
+      internalID: -736220525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_255
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab891b5972c3a9b4da15f733e96b6915
+      internalID: 325974226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_256
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1803d60b8284a5458378755d7674962
+      internalID: -621506623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_257
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52489372ba9a3a74a88f8d43a3e400dd
+      internalID: 1092700434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_258
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66ba4458686fe041844df075222f486
+      internalID: 1394407298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_259
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b329b5d27ddcf446a8e8d231612c1e0
+      internalID: -2106958392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_260
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb9958156c725b4596733bd7d22e858
+      internalID: 2052348298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_261
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e4f2830435f9540bb3b027f4b973e2
+      internalID: 24746987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_262
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc5ea8c00ccf034195316ee63eada0e
+      internalID: -1725167210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_263
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f80f43af2dfdf8408f13ac0a83a7230
+      internalID: 1519999625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_264
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b346fd34448b7d488f5839b4d923931
+      internalID: -1262474147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_265
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e38c1c6fd00d5e49857d7874fedb184
+      internalID: 1750093015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_266
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82e759b0da66d6478d13cd417b1f0b9
+      internalID: 1248901185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_267
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a83a1eb9e1dc5489cdf79074401ba1
+      internalID: -587346307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_268
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888b56c7cfed0204199359a89a7ae821
+      internalID: 1431830200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_269
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31696748c399e04286ef61dd3108125
+      internalID: -1290772029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_270
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecf7a5917684374ab8697e436316087
+      internalID: -164636072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_271
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d3e8ba147a7ff45a995cd22fdba4e0
+      internalID: -1531706453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_272
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b517f35646bd4f9be5aec86d6b194
+      internalID: 1336322338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_273
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577779ca35cdb3847803001101230795
+      internalID: -940958583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_274
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ab9eddede65744a8c91e255da26222
+      internalID: -1773604108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_275
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e7f9eb34e8b094f929ca2d996d54f6
+      internalID: 741416535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_276
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9629062f74ea32346b52011a948c9a0f
+      internalID: 1000108645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_277
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a1b46e0c9f2f6448586c79fe51d01c
+      internalID: -1560647919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_278
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33a825622133cf43b0c33ee84264757
+      internalID: 1010570058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_279
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a718e5454431834458ea453bc04d6a6a
+      internalID: -1272964173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_280
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be78385c1710d5c4aa298182cef7e2f7
+      internalID: 495936976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_281
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b3b7e942d8a7446b553ad701c5005d
+      internalID: 578043650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_282
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b263427008effb64482e30a9e41cabb0
+      internalID: 46152437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_283
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8576dd556608ef4f81e3103914a4d2c
+      internalID: 1153457597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_284
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49776e94b2cdae4f9c066d4f7fe545b
+      internalID: 215304722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_285
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cccb340deed9041b14ee742095140d
+      internalID: -878805459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_286
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26747214cd35784bb2090b37f199ca8
+      internalID: -1127264790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_287
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7af523a03b04074a9ce4b17fd19b2c8
+      internalID: 2077076442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_288
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b198fc68d47190b4c9504979e3cfe084
+      internalID: 944593728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_289
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8c9c10db9004040b6c32a65b587adf
+      internalID: 77200219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_290
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd388bdef9ce8554ca146a13dca431c8
+      internalID: -704147817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_291
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ce678256c20e544ac71f451b2d22dd
+      internalID: -886681798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_292
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 2112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4095f822fcf3644a4d7367b86ff9fa
+      internalID: 2095361292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_293
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2080
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677715e74ca049a41a6bb1eb3db40383
+      internalID: -1523561116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_294
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2080
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11857d2b93bac724a9c75990678b9b56
+      internalID: 1720684608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_295
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228b940df1aff834696d8e5515309b75
+      internalID: 2135057626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_296
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0683f59627bf14fb491c132ab5b1f6
+      internalID: -240907929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_297
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d15dbb5b4be8c41b76b6b0161d14f3
+      internalID: 419871665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_298
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e16aec8ff4484cb41972b3d35e128
+      internalID: -1806920407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_299
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c224d880b6dcf4fb88a29bbb3e9e07
+      internalID: 1741204926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_300
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac6b3de7f736f24ea42fce5706868d5
+      internalID: -1881124211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_301
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137b4bd4cb65f524f8ed3e4b6975bd6c
+      internalID: -401223732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_302
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d48e34e7800a1d44b3a431113863c22
+      internalID: 100409064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_303
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2048
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b62096073473e498b282bbd6a48f5e
+      internalID: -799002412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_304
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc36de6527e5854eaeddc4aeeb1435a
+      internalID: -1513614285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_305
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18d424d8148e5141b7bddfb37032583
+      internalID: -2031716190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_306
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73d00f0fec11b04dbdaedef3b64125d
+      internalID: -536404230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_307
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461d77db60d542e43986a656bf5b271c
+      internalID: -391624098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_308
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea1ba8b3c12879479bca6c6ad10e679
+      internalID: 684182681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_309
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cb34655ef57d8489da32d1389735df
+      internalID: 593823826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_310
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fcb50101a1fa146a69996d7e83d3fd
+      internalID: 1042517433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_311
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428135dbbe52a1d4e81766fc68f62b44
+      internalID: 2047403807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_312
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54929b51c5cb6643856b06899b327c3
+      internalID: -1209733864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_313
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a08f22a879570449cd81b7f1eb7c91
+      internalID: 602266852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_314
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49feca296ad302f45a9160bce6fe89ef
+      internalID: 824644477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_315
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8a1dba000e9064281e23caa69def71
+      internalID: 467462869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_316
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27046c4970dd99c489816af0d7a5fc4c
+      internalID: 1250651968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_317
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337f721714323734da11f33c44767f70
+      internalID: 1021677715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_318
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35207ffd14249740b52cf1ba7dcc277
+      internalID: 1516735353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_319
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154ba12f13fe60348832575a64e1844f
+      internalID: -1195996702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_320
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db230efbc3563949b6214ad8ed703ab
+      internalID: -408175699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_321
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f693fd8b55ccbe458d3ec98a16deb66
+      internalID: -276647966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_322
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f48506bdf4e7a8429777d604a051a53
+      internalID: -21164127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_323
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3a14732e0511a46a58ff9429c53ae7
+      internalID: -1198708834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_324
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b9b4e6b6d0fb140ade7500737fe66c
+      internalID: 873227514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_325
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31051ef8434c44a438df0964b0a2cbaa
+      internalID: 874725919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_326
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded8bea1c5107344aa5ac67c528f5847
+      internalID: -1966809318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_327
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a087196c3ea93ac4eb24e87ae5110b31
+      internalID: -1321483927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_328
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee83311018462b41b45a3e8b9f6bd5a
+      internalID: 551890862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_329
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9907e7ac2a91a8d49b8ed546da07e928
+      internalID: -143432905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_330
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cd678cfc34735418d2449ca52ed600
+      internalID: 1841420225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AAAB_Sprites_Juntas_331
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e04f0ad5e119b4f87bfe3b68b71d83
+      internalID: 1235281227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AAAB_Sprites_Juntas_0: -209694003
+      AAAB_Sprites_Juntas_1: 1879971838
+      AAAB_Sprites_Juntas_10: -809708923
+      AAAB_Sprites_Juntas_100: 1424728438
+      AAAB_Sprites_Juntas_101: -1861549745
+      AAAB_Sprites_Juntas_102: -12452548
+      AAAB_Sprites_Juntas_103: -1928874040
+      AAAB_Sprites_Juntas_104: 2002012724
+      AAAB_Sprites_Juntas_105: 301388948
+      AAAB_Sprites_Juntas_106: -2005343587
+      AAAB_Sprites_Juntas_107: -1433807230
+      AAAB_Sprites_Juntas_108: 1546089343
+      AAAB_Sprites_Juntas_109: 1990899997
+      AAAB_Sprites_Juntas_11: 1675568975
+      AAAB_Sprites_Juntas_110: -1523630921
+      AAAB_Sprites_Juntas_111: 353244936
+      AAAB_Sprites_Juntas_112: 2057537218
+      AAAB_Sprites_Juntas_113: 2049610572
+      AAAB_Sprites_Juntas_114: -210150094
+      AAAB_Sprites_Juntas_115: 1561137988
+      AAAB_Sprites_Juntas_116: 1177832727
+      AAAB_Sprites_Juntas_117: 1908163947
+      AAAB_Sprites_Juntas_118: -24389936
+      AAAB_Sprites_Juntas_119: 349352963
+      AAAB_Sprites_Juntas_12: -1238294714
+      AAAB_Sprites_Juntas_120: 1740994014
+      AAAB_Sprites_Juntas_121: 1603828136
+      AAAB_Sprites_Juntas_122: 497870982
+      AAAB_Sprites_Juntas_123: 1310223065
+      AAAB_Sprites_Juntas_124: 1986482288
+      AAAB_Sprites_Juntas_125: -7629597
+      AAAB_Sprites_Juntas_126: -837381966
+      AAAB_Sprites_Juntas_127: -395652820
+      AAAB_Sprites_Juntas_128: -696289598
+      AAAB_Sprites_Juntas_129: 2007797395
+      AAAB_Sprites_Juntas_13: -1840307799
+      AAAB_Sprites_Juntas_130: 687335943
+      AAAB_Sprites_Juntas_131: 920478095
+      AAAB_Sprites_Juntas_132: 1010131067
+      AAAB_Sprites_Juntas_133: -2096347112
+      AAAB_Sprites_Juntas_134: -135054401
+      AAAB_Sprites_Juntas_135: -1179904285
+      AAAB_Sprites_Juntas_136: -1853823159
+      AAAB_Sprites_Juntas_137: 1171170242
+      AAAB_Sprites_Juntas_138: 1268776518
+      AAAB_Sprites_Juntas_139: -915399450
+      AAAB_Sprites_Juntas_14: 709047569
+      AAAB_Sprites_Juntas_140: -2077917432
+      AAAB_Sprites_Juntas_141: -148502034
+      AAAB_Sprites_Juntas_142: -47050728
+      AAAB_Sprites_Juntas_143: -1546781895
+      AAAB_Sprites_Juntas_144: -486837083
+      AAAB_Sprites_Juntas_145: 118332479
+      AAAB_Sprites_Juntas_146: -1320667440
+      AAAB_Sprites_Juntas_147: 441191606
+      AAAB_Sprites_Juntas_148: 1132278513
+      AAAB_Sprites_Juntas_149: -52370740
+      AAAB_Sprites_Juntas_15: -780477885
+      AAAB_Sprites_Juntas_150: -2085970929
+      AAAB_Sprites_Juntas_151: 11626849
+      AAAB_Sprites_Juntas_152: 1426488334
+      AAAB_Sprites_Juntas_153: 2032603351
+      AAAB_Sprites_Juntas_154: -1697874815
+      AAAB_Sprites_Juntas_155: 1759982398
+      AAAB_Sprites_Juntas_156: -1382294556
+      AAAB_Sprites_Juntas_157: 900581777
+      AAAB_Sprites_Juntas_158: 640386699
+      AAAB_Sprites_Juntas_159: 783387857
+      AAAB_Sprites_Juntas_16: -276290191
+      AAAB_Sprites_Juntas_160: -734028869
+      AAAB_Sprites_Juntas_161: -389853761
+      AAAB_Sprites_Juntas_162: 113371851
+      AAAB_Sprites_Juntas_163: -1829548723
+      AAAB_Sprites_Juntas_164: 1318497878
+      AAAB_Sprites_Juntas_165: -1014278955
+      AAAB_Sprites_Juntas_166: -1166176844
+      AAAB_Sprites_Juntas_167: -1158364159
+      AAAB_Sprites_Juntas_168: 1596733172
+      AAAB_Sprites_Juntas_169: 1142768239
+      AAAB_Sprites_Juntas_17: 1926130309
+      AAAB_Sprites_Juntas_170: 1591556645
+      AAAB_Sprites_Juntas_171: 1360205744
+      AAAB_Sprites_Juntas_172: 1661196559
+      AAAB_Sprites_Juntas_173: -1482670706
+      AAAB_Sprites_Juntas_174: 1615987099
+      AAAB_Sprites_Juntas_175: 920540823
+      AAAB_Sprites_Juntas_176: 2086011362
+      AAAB_Sprites_Juntas_177: -10654296
+      AAAB_Sprites_Juntas_178: -723794722
+      AAAB_Sprites_Juntas_179: -368386620
+      AAAB_Sprites_Juntas_18: -710297520
+      AAAB_Sprites_Juntas_180: -1939375441
+      AAAB_Sprites_Juntas_181: -766235030
+      AAAB_Sprites_Juntas_182: 1228843847
+      AAAB_Sprites_Juntas_183: 242483571
+      AAAB_Sprites_Juntas_184: -1923331
+      AAAB_Sprites_Juntas_185: -1350034609
+      AAAB_Sprites_Juntas_186: 882527259
+      AAAB_Sprites_Juntas_187: 897672966
+      AAAB_Sprites_Juntas_188: -1527656749
+      AAAB_Sprites_Juntas_189: -1514407426
+      AAAB_Sprites_Juntas_19: 1243810088
+      AAAB_Sprites_Juntas_190: -1654473617
+      AAAB_Sprites_Juntas_191: -795373002
+      AAAB_Sprites_Juntas_192: 751283597
+      AAAB_Sprites_Juntas_193: -1372435403
+      AAAB_Sprites_Juntas_194: -1430272945
+      AAAB_Sprites_Juntas_195: 1760850784
+      AAAB_Sprites_Juntas_196: -1134588376
+      AAAB_Sprites_Juntas_197: -1230379711
+      AAAB_Sprites_Juntas_198: -1952872902
+      AAAB_Sprites_Juntas_199: 263387109
+      AAAB_Sprites_Juntas_2: -1764301803
+      AAAB_Sprites_Juntas_20: -1901058101
+      AAAB_Sprites_Juntas_200: -1524404651
+      AAAB_Sprites_Juntas_201: -312920086
+      AAAB_Sprites_Juntas_202: 532394664
+      AAAB_Sprites_Juntas_203: 53417668
+      AAAB_Sprites_Juntas_204: 1209685454
+      AAAB_Sprites_Juntas_205: -1023568393
+      AAAB_Sprites_Juntas_206: 1444968582
+      AAAB_Sprites_Juntas_207: 1848008359
+      AAAB_Sprites_Juntas_208: 319777067
+      AAAB_Sprites_Juntas_209: -756003742
+      AAAB_Sprites_Juntas_21: 1367632850
+      AAAB_Sprites_Juntas_210: -1676287161
+      AAAB_Sprites_Juntas_211: -431718849
+      AAAB_Sprites_Juntas_212: 1985818360
+      AAAB_Sprites_Juntas_213: -527070355
+      AAAB_Sprites_Juntas_214: -1423025670
+      AAAB_Sprites_Juntas_215: 1753463419
+      AAAB_Sprites_Juntas_216: -1387409339
+      AAAB_Sprites_Juntas_217: 1795666761
+      AAAB_Sprites_Juntas_218: 710787593
+      AAAB_Sprites_Juntas_219: -2002929556
+      AAAB_Sprites_Juntas_22: 1470464521
+      AAAB_Sprites_Juntas_220: -1743769895
+      AAAB_Sprites_Juntas_221: 1760099144
+      AAAB_Sprites_Juntas_222: 1910429286
+      AAAB_Sprites_Juntas_223: -10025072
+      AAAB_Sprites_Juntas_224: 166971555
+      AAAB_Sprites_Juntas_225: 857767698
+      AAAB_Sprites_Juntas_226: -1609154390
+      AAAB_Sprites_Juntas_227: 663967753
+      AAAB_Sprites_Juntas_228: 986861152
+      AAAB_Sprites_Juntas_229: -1375875071
+      AAAB_Sprites_Juntas_23: -1049157968
+      AAAB_Sprites_Juntas_230: -1201770735
+      AAAB_Sprites_Juntas_231: -492405217
+      AAAB_Sprites_Juntas_232: -2009033960
+      AAAB_Sprites_Juntas_233: -1370639831
+      AAAB_Sprites_Juntas_234: 662564496
+      AAAB_Sprites_Juntas_235: -1599209016
+      AAAB_Sprites_Juntas_236: -1422890847
+      AAAB_Sprites_Juntas_237: -880973797
+      AAAB_Sprites_Juntas_238: 1942359513
+      AAAB_Sprites_Juntas_239: 1471713638
+      AAAB_Sprites_Juntas_24: -1943161856
+      AAAB_Sprites_Juntas_240: -755094169
+      AAAB_Sprites_Juntas_241: 838188624
+      AAAB_Sprites_Juntas_242: -1413941919
+      AAAB_Sprites_Juntas_243: -1900556508
+      AAAB_Sprites_Juntas_244: 54369348
+      AAAB_Sprites_Juntas_245: -419715879
+      AAAB_Sprites_Juntas_246: 680957936
+      AAAB_Sprites_Juntas_247: -1904487529
+      AAAB_Sprites_Juntas_248: 1089809279
+      AAAB_Sprites_Juntas_249: -412208471
+      AAAB_Sprites_Juntas_25: 859685412
+      AAAB_Sprites_Juntas_250: -1122566626
+      AAAB_Sprites_Juntas_251: -1995515910
+      AAAB_Sprites_Juntas_252: 1780097123
+      AAAB_Sprites_Juntas_253: 777093769
+      AAAB_Sprites_Juntas_254: -736220525
+      AAAB_Sprites_Juntas_255: 325974226
+      AAAB_Sprites_Juntas_256: -621506623
+      AAAB_Sprites_Juntas_257: 1092700434
+      AAAB_Sprites_Juntas_258: 1394407298
+      AAAB_Sprites_Juntas_259: -2106958392
+      AAAB_Sprites_Juntas_26: 756984691
+      AAAB_Sprites_Juntas_260: 2052348298
+      AAAB_Sprites_Juntas_261: 24746987
+      AAAB_Sprites_Juntas_262: -1725167210
+      AAAB_Sprites_Juntas_263: 1519999625
+      AAAB_Sprites_Juntas_264: -1262474147
+      AAAB_Sprites_Juntas_265: 1750093015
+      AAAB_Sprites_Juntas_266: 1248901185
+      AAAB_Sprites_Juntas_267: -587346307
+      AAAB_Sprites_Juntas_268: 1431830200
+      AAAB_Sprites_Juntas_269: -1290772029
+      AAAB_Sprites_Juntas_27: -441734402
+      AAAB_Sprites_Juntas_270: -164636072
+      AAAB_Sprites_Juntas_271: -1531706453
+      AAAB_Sprites_Juntas_272: 1336322338
+      AAAB_Sprites_Juntas_273: -940958583
+      AAAB_Sprites_Juntas_274: -1773604108
+      AAAB_Sprites_Juntas_275: 741416535
+      AAAB_Sprites_Juntas_276: 1000108645
+      AAAB_Sprites_Juntas_277: -1560647919
+      AAAB_Sprites_Juntas_278: 1010570058
+      AAAB_Sprites_Juntas_279: -1272964173
+      AAAB_Sprites_Juntas_28: 702036183
+      AAAB_Sprites_Juntas_280: 495936976
+      AAAB_Sprites_Juntas_281: 578043650
+      AAAB_Sprites_Juntas_282: 46152437
+      AAAB_Sprites_Juntas_283: 1153457597
+      AAAB_Sprites_Juntas_284: 215304722
+      AAAB_Sprites_Juntas_285: -878805459
+      AAAB_Sprites_Juntas_286: -1127264790
+      AAAB_Sprites_Juntas_287: 2077076442
+      AAAB_Sprites_Juntas_288: 944593728
+      AAAB_Sprites_Juntas_289: 77200219
+      AAAB_Sprites_Juntas_29: -1880070332
+      AAAB_Sprites_Juntas_290: -704147817
+      AAAB_Sprites_Juntas_291: -886681798
+      AAAB_Sprites_Juntas_292: 2095361292
+      AAAB_Sprites_Juntas_293: -1523561116
+      AAAB_Sprites_Juntas_294: 1720684608
+      AAAB_Sprites_Juntas_295: 2135057626
+      AAAB_Sprites_Juntas_296: -240907929
+      AAAB_Sprites_Juntas_297: 419871665
+      AAAB_Sprites_Juntas_298: -1806920407
+      AAAB_Sprites_Juntas_299: 1741204926
+      AAAB_Sprites_Juntas_3: -1336794531
+      AAAB_Sprites_Juntas_30: -1919779532
+      AAAB_Sprites_Juntas_300: -1881124211
+      AAAB_Sprites_Juntas_301: -401223732
+      AAAB_Sprites_Juntas_302: 100409064
+      AAAB_Sprites_Juntas_303: -799002412
+      AAAB_Sprites_Juntas_304: -1513614285
+      AAAB_Sprites_Juntas_305: -2031716190
+      AAAB_Sprites_Juntas_306: -536404230
+      AAAB_Sprites_Juntas_307: -391624098
+      AAAB_Sprites_Juntas_308: 684182681
+      AAAB_Sprites_Juntas_309: 593823826
+      AAAB_Sprites_Juntas_31: -2047790073
+      AAAB_Sprites_Juntas_310: 1042517433
+      AAAB_Sprites_Juntas_311: 2047403807
+      AAAB_Sprites_Juntas_312: -1209733864
+      AAAB_Sprites_Juntas_313: 602266852
+      AAAB_Sprites_Juntas_314: 824644477
+      AAAB_Sprites_Juntas_315: 467462869
+      AAAB_Sprites_Juntas_316: 1250651968
+      AAAB_Sprites_Juntas_317: 1021677715
+      AAAB_Sprites_Juntas_318: 1516735353
+      AAAB_Sprites_Juntas_319: -1195996702
+      AAAB_Sprites_Juntas_32: -889348418
+      AAAB_Sprites_Juntas_320: -408175699
+      AAAB_Sprites_Juntas_321: -276647966
+      AAAB_Sprites_Juntas_322: -21164127
+      AAAB_Sprites_Juntas_323: -1198708834
+      AAAB_Sprites_Juntas_324: 873227514
+      AAAB_Sprites_Juntas_325: 874725919
+      AAAB_Sprites_Juntas_326: -1966809318
+      AAAB_Sprites_Juntas_327: -1321483927
+      AAAB_Sprites_Juntas_328: 551890862
+      AAAB_Sprites_Juntas_329: -143432905
+      AAAB_Sprites_Juntas_33: 1626904986
+      AAAB_Sprites_Juntas_330: 1841420225
+      AAAB_Sprites_Juntas_331: 1235281227
+      AAAB_Sprites_Juntas_34: -489800230
+      AAAB_Sprites_Juntas_35: -2001882988
+      AAAB_Sprites_Juntas_36: 427608438
+      AAAB_Sprites_Juntas_37: 469908338
+      AAAB_Sprites_Juntas_38: -114792701
+      AAAB_Sprites_Juntas_39: 1261561756
+      AAAB_Sprites_Juntas_4: 1284662217
+      AAAB_Sprites_Juntas_40: -882447531
+      AAAB_Sprites_Juntas_41: 903169155
+      AAAB_Sprites_Juntas_42: 2024814662
+      AAAB_Sprites_Juntas_43: 2065884606
+      AAAB_Sprites_Juntas_44: 222109550
+      AAAB_Sprites_Juntas_45: -1471557214
+      AAAB_Sprites_Juntas_46: 709969126
+      AAAB_Sprites_Juntas_47: 2130371474
+      AAAB_Sprites_Juntas_48: 1296382512
+      AAAB_Sprites_Juntas_49: 240822421
+      AAAB_Sprites_Juntas_5: -257341498
+      AAAB_Sprites_Juntas_50: -1792929836
+      AAAB_Sprites_Juntas_51: 1421142301
+      AAAB_Sprites_Juntas_52: 1049490289
+      AAAB_Sprites_Juntas_53: 1742564021
+      AAAB_Sprites_Juntas_54: -323235843
+      AAAB_Sprites_Juntas_55: -1815317834
+      AAAB_Sprites_Juntas_56: -612001741
+      AAAB_Sprites_Juntas_57: -158855715
+      AAAB_Sprites_Juntas_58: -1042726454
+      AAAB_Sprites_Juntas_59: -996563402
+      AAAB_Sprites_Juntas_6: 838252471
+      AAAB_Sprites_Juntas_60: -1865670501
+      AAAB_Sprites_Juntas_61: 209463956
+      AAAB_Sprites_Juntas_62: -363319106
+      AAAB_Sprites_Juntas_63: 2004067031
+      AAAB_Sprites_Juntas_64: -1013745376
+      AAAB_Sprites_Juntas_65: 1387626392
+      AAAB_Sprites_Juntas_66: 476747398
+      AAAB_Sprites_Juntas_67: 683665465
+      AAAB_Sprites_Juntas_68: 774164694
+      AAAB_Sprites_Juntas_69: -974323635
+      AAAB_Sprites_Juntas_7: -2146591173
+      AAAB_Sprites_Juntas_70: 1087033183
+      AAAB_Sprites_Juntas_71: -1046062841
+      AAAB_Sprites_Juntas_72: -366916215
+      AAAB_Sprites_Juntas_73: -940048927
+      AAAB_Sprites_Juntas_74: -1637681680
+      AAAB_Sprites_Juntas_75: 1012300609
+      AAAB_Sprites_Juntas_76: -1484566878
+      AAAB_Sprites_Juntas_77: -114486612
+      AAAB_Sprites_Juntas_78: -220082433
+      AAAB_Sprites_Juntas_79: -1638661463
+      AAAB_Sprites_Juntas_8: 988231978
+      AAAB_Sprites_Juntas_80: -1172281347
+      AAAB_Sprites_Juntas_81: 1338724055
+      AAAB_Sprites_Juntas_82: -58058539
+      AAAB_Sprites_Juntas_83: -1562923099
+      AAAB_Sprites_Juntas_84: -1419576985
+      AAAB_Sprites_Juntas_85: 945719865
+      AAAB_Sprites_Juntas_86: 276758864
+      AAAB_Sprites_Juntas_87: 1508282265
+      AAAB_Sprites_Juntas_88: 365987657
+      AAAB_Sprites_Juntas_89: -1249825962
+      AAAB_Sprites_Juntas_9: 1187437768
+      AAAB_Sprites_Juntas_90: 421451360
+      AAAB_Sprites_Juntas_91: 1278904889
+      AAAB_Sprites_Juntas_92: -187125352
+      AAAB_Sprites_Juntas_93: -1063808249
+      AAAB_Sprites_Juntas_94: -1253980828
+      AAAB_Sprites_Juntas_95: -137988358
+      AAAB_Sprites_Juntas_96: -542868780
+      AAAB_Sprites_Juntas_97: -1681257680
+      AAAB_Sprites_Juntas_98: -913092109
+      AAAB_Sprites_Juntas_99: -964116556
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
