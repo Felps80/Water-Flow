@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float velPower = 2f;
     [SerializeField] private int totalPulos = 1;
 
+    // Variáveis para Raycast
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float raycastDistance = 0.1f;
+
     private Rigidbody2D meuRB;
     private Animator meuAnim;
     private BoxCollider2D playerCollider;
@@ -52,6 +56,10 @@ public class PlayerController : MonoBehaviour
     private bool desacelerandoVertical = false;
     #endregion
 
+    // Variáveis para adiar a aplicação do fall multiplier
+    [SerializeField] private float fallDelay = 0.1f; // tempo (em segundos) que espera antes de aumentar a gravidade
+    private float fallTimer = 0f;
+
     void Start()
     {
         meuRB = GetComponent<Rigidbody2D>();
@@ -70,6 +78,9 @@ public class PlayerController : MonoBehaviour
         }
 
         GerenciarCorrentezas();
+
+        // Detecção do chão usando Raycast
+        RaycastCheckGround();
     }
 
     void FixedUpdate()
@@ -113,21 +124,43 @@ public class PlayerController : MonoBehaviour
         if (emAwaVertical)
         {
             meuRB.gravityScale = -forcaEmpurraoVertical * direcaoEmpurraoVertical;
+            fallTimer = 0f;
         }
         else if (awaVSub)
         {
             meuRB.gravityScale = -forcaEmpurraoVertical;
+            fallTimer = 0f;
         }
         else if (awaVBai)
         {
             meuRB.gravityScale = forcaEmpurraoVertical;
+            fallTimer = 0f;
         }
-        else if (!noChao && meuRB.velocity.y < 0)
+        else if (!noChao)
         {
-            meuRB.gravityScale = 2f;
+            // Se estiver caindo, acumula o tempo antes de aplicar o fall multiplier
+            if (meuRB.velocity.y < 0)
+            {
+                fallTimer += Time.deltaTime;
+                if (fallTimer >= fallDelay)
+                {
+                    meuRB.gravityScale = 2f;
+                }
+                else
+                {
+                    meuRB.gravityScale = 1f;
+                }
+            }
+            else
+            {
+                // Se estiver subindo, reinicia o timer e mantém a gravidade 1
+                fallTimer = 0f;
+                meuRB.gravityScale = 1f;
+            }
         }
         else
         {
+            fallTimer = 0f;
             meuRB.gravityScale = 1f;
         }
 
@@ -165,7 +198,8 @@ public class PlayerController : MonoBehaviour
         bool puloPressionado = (Input.GetKeyDown(KeyCode.Space) || puloMobile);
 
         // Não permite pulo em correntezas
-        if ((emAwaHorizontal || awaHDir || awaHEs || emAwaVertical || awaVSub || awaVBai)) return;
+        if (emAwaHorizontal || awaHDir || awaHEs || emAwaVertical || awaVSub || awaVBai)
+            return;
 
         if (puloPressionado && pulosDisponiveis > 0)
         {
@@ -226,31 +260,7 @@ public class PlayerController : MonoBehaviour
         dashMobile = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Colidiu com: " + collision.gameObject.name);
-
-        if (collision.gameObject.CompareTag("Chao"))
-        {
-            Debug.Log("Está no chão!");
-            noChao = true;
-            pulosDisponiveis = totalPulos;
-            meuAnim.SetBool("NoChao", true);
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Debug.Log("Saiu da colisão com: " + collision.gameObject.name);
-
-        if (collision.gameObject.CompareTag("Chao"))
-        {
-            Debug.Log("Saiu do chão!");
-            noChao = false;
-            meuAnim.SetBool("NoChao", false);
-        }
-    }
-
+    // Removemos a detecção do chão via colisão para usar somente o Raycast.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("ovocelente"))
@@ -313,6 +323,39 @@ public class PlayerController : MonoBehaviour
         else if (awaVBai)
         {
             meuRB.velocity = new Vector2(meuRB.velocity.x, -forcaEmpurraoVertical);
+        }
+    }
+
+    // Método que utiliza Raycast para detectar se o personagem está no chão.
+    private void RaycastCheckGround()
+    {
+        Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - playerCollider.bounds.extents.y + 0.01f);
+        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
+
+        if (hit.collider != null && meuRB.velocity.y <= 0)
+        {
+            if (!noChao)
+            {
+                pulosDisponiveis = totalPulos;
+                noChao = true;
+                meuAnim.SetBool("NoChao", true);
+                Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
+            }
+        }
+        else
+        {
+            noChao = false;
+            meuAnim.SetBool("NoChao", false);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (playerCollider != null)
+        {
+            Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - playerCollider.bounds.extents.y + 0.01f);
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
         }
     }
 }
