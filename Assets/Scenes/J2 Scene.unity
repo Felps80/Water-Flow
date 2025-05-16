@@ -3435,7 +3435,6 @@ GameObject:
   - component: {fileID: 1050803199}
   - component: {fileID: 1050803200}
   - component: {fileID: 1050803202}
-  - component: {fileID: 1050803203}
   m_Layer: 7
   m_Name: Level Bounds
   m_TagString: Untagged
@@ -3546,22 +3545,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &1050803203
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050803198}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
 --- !u!1 &1261560912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,24 +3599,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942eaf2fa4ab92d49ab31086da676ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velh: 5
-  velv: 8
-  acceleration: 5
-  decceleration: 2
-  velPower: 2
+  velh: 5.5
+  velv: 6
+  acceleration: 8
+  decceleration: 9
+  velPower: 1.5
   totalPulos: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   raycastDistance: 0.2
-  tempoDesaceleracaoVertical: 0.3
-  dashSpeed: 10
-  dashDuration: 0.2
-  dashCooldown: 1
+  tempoDesaceleracaoVertical: 0.2
+  dashSpeed: 13
+  dashDuration: 0.25
+  dashCooldown: 0.8
   joystick: {fileID: 0}
   forcaEmpurraoHorizontal: 3
   forcaEmpurraoVertical: 3
-  fallDelay: 0.1
+  fallDelay: 0.18
 --- !u!61 &1261560915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3647,7 +3630,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1562419, y: -0.34400463}
+  m_Offset: {x: 0.0685792, y: -0.32839328}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3658,7 +3641,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5624285, y: 0.31043196}
+  m_Size: {x: 0.38710308, y: 0.28061163}
   m_EdgeRadius: 0
 --- !u!50 &1261560916
 Rigidbody2D:
@@ -3741,7 +3724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261560912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.98, y: -2.563, z: 0}
+  m_LocalPosition: {x: -6.768, y: -3.001, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3813,7 +3796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408843703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.98, y: -2.563, z: -10}
+  m_LocalPosition: {x: -6.768, y: -3.001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3930,7 +3913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592430307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.98, y: -2.563, z: -10}
+  m_LocalPosition: {x: -4.999415, y: -3.001032, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
