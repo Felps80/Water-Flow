@@ -28,8 +28,9 @@ public class PlayerController : MonoBehaviour
     #region Variáveis de Dash
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.2f;
-    [SerializeField] private float dashCooldown = 1f;
+    [SerializeField] private float dashCooldown = 10f;
     private float lastDashTime = -Mathf.Infinity;
+    [SerializeField] private float dashCooldownRestante;
     private bool isDashing = false;
     private Vector2 dashDirection;
 
@@ -75,6 +76,8 @@ public class PlayerController : MonoBehaviour
             ControleMovimento();
             Pulando();
             CheckDash();
+            dashCooldownRestante = Mathf.Max(0f, (lastDashTime + dashCooldown) - Time.time);
+            Debug.Log("Cooldown do Dash: " + dashCooldownRestante.ToString("F2") + " segundos");
         }
 
         GerenciarCorrentezas();
@@ -212,26 +215,46 @@ public class PlayerController : MonoBehaviour
     }
 
     private void CheckDash()
-    {
-        if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
-        {
-            float moveX = Input.GetAxisRaw("Horizontal");
-            float moveY = Input.GetAxisRaw("Vertical");
+{
 
-            if (joystick != null && (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f))
-            {
-                moveX = joystick.Horizontal;
-                moveY = joystick.Vertical;
-            }
-
-            if (moveX != 0 || moveY != 0)
-            {
-                dashDirection = new Vector2(moveX, moveY).normalized;
-                dashMobile = false;
-                StartCoroutine(Dash());
-            }
-        }
+    if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai){
+        return;
     }
+
+    if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if (joystick != null && (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f))
+        {
+            moveX = joystick.Horizontal;
+            moveY = joystick.Vertical;
+        }
+
+        // Limita os valores a apenas três direções: esquerda, direita e cima
+        if (moveY > 0.5f)
+        {
+            dashDirection = Vector2.up;
+        }
+        else if (moveX > 0.5f)
+        {
+            dashDirection = Vector2.right;
+        }
+        else if (moveX < -0.5f)
+        {
+            dashDirection = Vector2.left;
+        }
+        else
+        {
+            return; // Nenhuma direção válida pressionada
+        }
+
+        dashMobile = false;
+        StartCoroutine(Dash());
+    }
+}
+
 
     private IEnumerator Dash()
     {
