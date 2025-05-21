@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Projeto teste.sln"
+    "dotnet.defaultSolution": "Water-Flow.sln"
 }

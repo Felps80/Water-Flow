@@ -5,17 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartMenuControler : MonoBehaviour
 {
-   
-    public void OnStartClick()
+    public void StartMenu()
     {
-        SceneManager.LoadScene("J2 Scene");
-    }
-
-    public void OnExitClick()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
-        Application.Quit();
+        SceneManager.LoadScene("Main Menu");
     }
 }
