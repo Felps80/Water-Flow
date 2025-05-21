@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/J2 Scene.unity
     guid: 4db690f359cd27944b6cc98eac3b802b
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 81b13051fe0bdcf43adefe869fed8410
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 6d37bf6295326e54385ae0295e68a196, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 815328ad13174de418a4213d3124a2d7, type: 2}
