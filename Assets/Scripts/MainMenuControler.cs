@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuControler : MonoBehaviour
 {
+    public CreditScript creditsScript;
+
     public void OnStartClick()
     {
         SceneManager.LoadScene("J2 Scene");
@@ -17,4 +19,5 @@ public class MainMenuControler : MonoBehaviour
 #endif
         Application.Quit();
     }
+    
 }
