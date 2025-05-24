@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velh: 5.5
-  velv: 6
+  velv: 6.5
   acceleration: 8
   decceleration: 9
   velPower: 1.5
@@ -157,7 +157,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   raycastDistance: 0.2
-  tempoDesaceleracaoVertical: 0.2
+  tempoDesaceleracaoVertical: 0
   dashSpeed: 13
   dashDuration: 0.25
   dashCooldown: 0.8
@@ -165,7 +165,7 @@ MonoBehaviour:
   joystick: {fileID: 0}
   forcaEmpurraoHorizontal: 3
   forcaEmpurraoVertical: 3
-  fallDelay: 0.18
+  fallDelay: 0
 --- !u!95 &4815857525167846206
 Animator:
   serializedVersion: 5
