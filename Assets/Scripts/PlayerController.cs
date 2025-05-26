@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D meuRB;
     private Animator meuAnim;
-    private BoxCollider2D playerCollider;
+    private CapsuleCollider2D playerCollider;
 
     [SerializeField] private float tempoDesaceleracaoVertical = 0.3f;
     private bool noChao = false;
@@ -61,12 +61,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fallDelay = 0.1f; // tempo (em segundos) que espera antes de aumentar a gravidade
     private float fallTimer = 0f;
 
+    Vector2 startPosition;
+
     void Start()
     {
         meuRB = GetComponent<Rigidbody2D>();
         meuAnim = GetComponent<Animator>();
-        playerCollider = GetComponent<BoxCollider2D>();
+        playerCollider = GetComponent<CapsuleCollider2D>();
         pulosDisponiveis = totalPulos;
+        startPosition = transform.position;
+
     }
 
     void Update()
@@ -94,6 +98,7 @@ public class PlayerController : MonoBehaviour
                 meuRB.velocity = new Vector2(0f, meuRB.velocity.y); // Zera velocidade horizontal
             return;
         }
+
 
         MovimentoSuave();
         AtualizarGravidade();
@@ -352,7 +357,7 @@ public class PlayerController : MonoBehaviour
     // Método que utiliza Raycast para detectar se o personagem está no chão.
     private void RaycastCheckGround()
     {
-        // Define a origem utilizando a borda inferior central do BoxCollider2D
+        // Define a origem utilizando a borda inferior central do CapsuleCollider2D
         Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
 
@@ -374,6 +379,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+    //Cria um feedback visual do Raycast
     private void OnDrawGizmosSelected()
     {
         if (playerCollider != null)
@@ -383,4 +390,11 @@ public class PlayerController : MonoBehaviour
             Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
         }
     }
+
+    public void Die()
+    {
+        transform.position = startPosition;
+
+    }
+
 }
