@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -61,6 +62,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fallDelay = 0.1f; // tempo (em segundos) que espera antes de aumentar a gravidade
     private float fallTimer = 0f;
 
+    //Variavel da quantidade de ovos
+    public int eggCount = 0;
+
+    //Posição inicial do player
     Vector2 startPosition;
 
     void Start()
@@ -220,45 +225,46 @@ public class PlayerController : MonoBehaviour
     }
 
     private void CheckDash()
-{
-
-    if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai){
-        return;
-    }
-
-    if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
 
-        if (joystick != null && (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f))
+        if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai)
         {
-            moveX = joystick.Horizontal;
-            moveY = joystick.Vertical;
+            return;
         }
 
-        // Limita os valores a apenas três direções: esquerda, direita e cima
-        if (moveY > 0.5f)
+        if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
         {
-            dashDirection = Vector2.up;
-        }
-        else if (moveX > 0.5f)
-        {
-            dashDirection = Vector2.right;
-        }
-        else if (moveX < -0.5f)
-        {
-            dashDirection = Vector2.left;
-        }
-        else
-        {
-            return; // Nenhuma direção válida pressionada
-        }
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
 
-        dashMobile = false;
-        StartCoroutine(Dash());
+            if (joystick != null && (Mathf.Abs(joystick.Horizontal) > 0.2f || Mathf.Abs(joystick.Vertical) > 0.2f))
+            {
+                moveX = joystick.Horizontal;
+                moveY = joystick.Vertical;
+            }
+
+            // Limita os valores a apenas três direções: esquerda, direita e cima
+            if (moveY > 0.5f)
+            {
+                dashDirection = Vector2.up;
+            }
+            else if (moveX > 0.5f)
+            {
+                dashDirection = Vector2.right;
+            }
+            else if (moveX < -0.5f)
+            {
+                dashDirection = Vector2.left;
+            }
+            else
+            {
+                return; // Nenhuma direção válida pressionada
+            }
+
+            dashMobile = false;
+            StartCoroutine(Dash());
+        }
     }
-}
 
 
     private IEnumerator Dash()
@@ -397,4 +403,18 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void AddEgg()
+    {
+        eggCount++;   
+
+        if (eggCount >= 3)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+    }
+
+    
+
 }
+      
