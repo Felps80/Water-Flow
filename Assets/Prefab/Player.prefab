@@ -104,7 +104,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: e6ea400356613a0488225fd62f09539a, type: 2}
+  m_Material: {fileID: 6200000, guid: 4fcc2de5d9b139f4faef45f0d6e5ff0c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -139,6 +139,13 @@ MonoBehaviour:
   joystick: {fileID: 0}
   forcaEmpurraoHorizontal: 3
   forcaEmpurraoVertical: 3
+  alignmentSpeed: 5
+  alignmentThreshold: 0.2
+  correntezaLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  groundMaterial: {fileID: 6200000, guid: 4fcc2de5d9b139f4faef45f0d6e5ff0c, type: 2}
+  airMaterial: {fileID: 6200000, guid: e6ea400356613a0488225fd62f09539a, type: 2}
   fallDelay: 0
   eggCount: 0
 --- !u!95 &4815857525167846206
@@ -175,6 +182,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06800556, y: -0.35461932}
-  m_Size: {x: 0.38734746, y: 0.26950026}
+  m_Offset: {x: 0.030338941, y: -0.055475056}
+  m_Size: {x: 0.46268708, y: 0.19859825}
   m_Direction: 1

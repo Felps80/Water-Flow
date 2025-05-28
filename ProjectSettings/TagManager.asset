@@ -15,6 +15,7 @@ TagManager:
   - ovocelente
   - Chao
   - Egg
+  - Correnteza
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - UI
   - Ground
   - Ignore Raycast
-  - 
+  - Correnteza
   - 
   - 
   - 
