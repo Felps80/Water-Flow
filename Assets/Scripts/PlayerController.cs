@@ -58,6 +58,11 @@ public class PlayerController : MonoBehaviour
     private bool desacelerandoVertical = false;
     #endregion
 
+    // At the top with your other serialized variables:
+    [SerializeField] private PhysicsMaterial2D groundMaterial;  // Assign a material with some friction in the Inspector
+    [SerializeField] private PhysicsMaterial2D airMaterial;     // Assign your frictionless material here
+
+
     // Variáveis para adiar a aplicação do fall multiplier
     [SerializeField] private float fallDelay = 0.05f; // tempo (em segundos) que espera antes de aumentar a gravidade
     private float fallTimer = 0f;
@@ -104,9 +109,23 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-
+        UpdatePhysicsMaterial();
         MovimentoSuave();
         AtualizarGravidade();
+    }
+
+    private void UpdatePhysicsMaterial()
+    {
+        if (noChao)
+        {
+            if (playerCollider.sharedMaterial != groundMaterial)
+                playerCollider.sharedMaterial = groundMaterial;
+        }
+        else
+        {
+            if (playerCollider.sharedMaterial != airMaterial)
+                playerCollider.sharedMaterial = airMaterial;
+        }
     }
 
     private void MovimentoSuave()
@@ -114,15 +133,15 @@ public class PlayerController : MonoBehaviour
         float targetSpeed = moveInput * velh;
         float currentSpeed = meuRB.velocity.x;
 
-        if (velPower <= 0)
-        {
-            Debug.LogError("O valor de velPower deve ser maior que zero.");
-            velPower = 2f;
-        }
-
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
         float speedDifference = targetSpeed - currentSpeed;
         float newSpeed = Mathf.Pow(Mathf.Abs(speedDifference), velPower) * Mathf.Sign(speedDifference);
+
+        // When no input is provided and on ground, check if the speed is low and force it to zero
+        if (Mathf.Abs(moveInput) < 0.01f && noChao && Mathf.Abs(currentSpeed) < 0.7f)
+        {
+            currentSpeed = 0f;
+        }
 
         meuRB.velocity = new Vector2(
             Mathf.Lerp(currentSpeed, currentSpeed + newSpeed, accelRate * Time.fixedDeltaTime),
@@ -363,7 +382,7 @@ public class PlayerController : MonoBehaviour
     // Método que utiliza Raycast para detectar se o personagem está no chão.
     private void RaycastCheckGround()
     {
-        // Define a origem utilizando a borda inferior central do CapsuleCollider2D
+        // Define a origem utilizando a borda inferior central do Collider
         Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
 
@@ -400,7 +419,14 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         transform.position = startPosition;
+        eggCount = 0; // Reset player's egg count
+        Debug.Log("Player died. Egg count reset.");
 
+        // Tell EggManager to respawn the eggs.
+        if (EggManager.instance != null)
+        {
+            EggManager.instance.RespawnEggs();
+        }
     }
 
     public void AddEgg()

@@ -10,7 +10,7 @@ public class MainMenuControler : MonoBehaviour
     
     public void OnStartClick()
     {
-        SceneManager.LoadScene("J2 Scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void OnExitClick()
