@@ -130,7 +130,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  raycastDistance: 0.05
+  raycastDistance: 0.3
   tempoDesaceleracaoVertical: 0
   dashSpeed: 13
   dashDuration: 0.25

@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     #endregion 
 
 
-    // At the top with your other serialized variables:
+    //Diferentes Materiais
     [SerializeField] private PhysicsMaterial2D groundMaterial;  // Assign a material with some friction in the Inspector
     [SerializeField] private PhysicsMaterial2D airMaterial;     // Assign your frictionless material here
 
@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour
     //Posição inicial do player
     Vector2 startPosition;
 
+    
     void Start()
     {
         meuRB = GetComponent<Rigidbody2D>();
@@ -106,7 +107,7 @@ public class PlayerController : MonoBehaviour
         pulosDisponiveis = totalPulos;
         startPosition = transform.position;
 
-    }
+    } //Função chamada no começo
 
     void Update()
     {
@@ -123,7 +124,7 @@ public class PlayerController : MonoBehaviour
 
         // Detecção do chão usando Raycast
         RaycastCheckGround();
-    }
+    } //Função chamada a cada frame
 
     void FixedUpdate()
     {
@@ -196,7 +197,7 @@ public class PlayerController : MonoBehaviour
         UpdatePhysicsMaterial();
         MovimentoSuave();
         AtualizarGravidade();
-    }
+    } //Função chamada a cada alguns frames
 
     private void UpdatePhysicsMaterial()
     {
@@ -210,7 +211,7 @@ public class PlayerController : MonoBehaviour
             if (playerCollider.sharedMaterial != airMaterial)
                 playerCollider.sharedMaterial = airMaterial;
         }
-    }
+    } //Muda o material dependendo da situação
 
     private void MovimentoSuave()
     {
@@ -238,7 +239,7 @@ public class PlayerController : MonoBehaviour
             meuRB.velocity.y
         );
         meuAnim.SetBool("Movendo", Mathf.Abs(moveInput) > 0);
-    }
+    } //Movimentação do player
 
     private void AtualizarGravidade()
     {
@@ -298,7 +299,7 @@ public class PlayerController : MonoBehaviour
                 meuRB.gravityScale = 1f;
             }
         }
-    }
+    } //Aumenta a gravidade no topo
 
     private void ControleMovimento()
     {
@@ -312,7 +313,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         else if (moveInput < 0)
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-    }
+    }  //Controle de movimento 
 
     private void Pulando()
     {
@@ -330,7 +331,7 @@ public class PlayerController : MonoBehaviour
             meuAnim.SetBool("NoChao", false);
             puloMobile = false;
         }
-    }
+    } //Pulo do Player
 
     private void CheckDash()
     {
@@ -376,7 +377,7 @@ public class PlayerController : MonoBehaviour
             dashMobile = false;
             StartCoroutine(Dash());
         }
-    }
+    } //Checa para ver se pode dar dash
 
 
     private IEnumerator Dash()
@@ -393,20 +394,20 @@ public class PlayerController : MonoBehaviour
 
         meuRB.velocity = Vector2.zero;
         isDashing = false;
-    }
+    } //Contador de temopo do dash
 
     public void PularMobile()
     {
         puloMobile = true;
         pulosDisponiveis = totalPulos;
-    }
+    } //Pulo para Mobile
 
     public void DashMobile()
     {
         dashMobile = true;
-    }
+    } //Dash para mobile
 
-    // Removemos a detecção do chão via colisão para usar somente o Raycast.
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("ovocelente"))
@@ -448,7 +449,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-    }
+    } //Colisão ao entrar em contato
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -475,9 +476,9 @@ public class PlayerController : MonoBehaviour
             desacelerandoVertical = true;
             desaceleracaoTimer = 0f;
         }
-    }
+    } //Colisão ao sair de contato
 
-   
+
     private void GerenciarCorrentezas()
     {
         if (emAwaHorizontal)
@@ -508,9 +509,9 @@ public class PlayerController : MonoBehaviour
         {
             meuRB.velocity = new Vector2(meuRB.velocity.x, -forcaEmpurraoVertical);
         }
-    }
+    } //Gerencia as correntezas (Antigas)
 
-    // Método que utiliza Raycast para detectar se o personagem está no chão.
+    
     private void RaycastCheckGround()
     {
         // Define a origem utilizando a borda inferior central do Collider
@@ -533,10 +534,8 @@ public class PlayerController : MonoBehaviour
             meuAnim.SetBool("NoChao", false);
         }
 
-    }
+    } //Joga um raio para baixo para checar se estamos no chão
 
-
-    //Cria um feedback visual do Raycast
     private void OnDrawGizmosSelected()
     {
         if (playerCollider != null)
@@ -545,7 +544,7 @@ public class PlayerController : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
         }
-    }
+    } //Cria um feedback visual do Raycast
 
     public void Die()
     {
@@ -558,7 +557,7 @@ public class PlayerController : MonoBehaviour
         {
             EggManager.instance.RespawnEggs();
         }
-    }
+    } //Mata o Player
 
     public void AddEgg()
     {
@@ -569,9 +568,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-    }
-
-    #region Correnteza 2.0
+    } //Adiciona ovos na contagem e pula para a proxima fase
 
     private void UpdateCurrentCorrenteTile()
     {
@@ -625,12 +622,6 @@ public class PlayerController : MonoBehaviour
         // Se nenhum tile for encontrado
         currentCorrenteTile = null;
         isInCorrenteza = false;
-    }
-
-
-
-
-
-    #endregion
+    } //Permite que o player consgia trocar de correnteza sem problema 
 
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6715925245914479202}
   - component: {fileID: 6715925245914479205}
   - component: {fileID: 6715925245914479204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Correnteza U
   m_TagString: Correnteza
   m_Icon: {fileID: 0}
