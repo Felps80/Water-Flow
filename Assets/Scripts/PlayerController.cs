@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     // Variáveis para adiar a aplicação do fall multiplier
-    [SerializeField] private float fallDelay = 0.1f; // tempo (em segundos) que espera antes de aumentar a gravidade
+    [SerializeField] private float fallDelay = 0.05f; // tempo (em segundos) que espera antes de aumentar a gravidade
     private float fallTimer = 0f;
 
     //Variavel da quantidade de ovos
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    meuRB.gravityScale = 1f;
+                    meuRB.gravityScale = 0.8f;
                 }
             }
             else
@@ -216,7 +216,7 @@ public class PlayerController : MonoBehaviour
 
         if (puloPressionado && pulosDisponiveis > 0)
         {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, velv);
+            meuRB.velocity += new Vector2(0, velv * 2f);
             pulosDisponiveis--;
             noChao = false;
             meuAnim.SetBool("NoChao", false);

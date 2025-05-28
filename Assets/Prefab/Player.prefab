@@ -121,9 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942eaf2fa4ab92d49ab31086da676ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velh: 5.5
-  velv: 6.5
-  acceleration: 8
+  velh: 5.6
+  velv: 3.1
+  acceleration: 7
   decceleration: 9
   velPower: 1.5
   totalPulos: 1
@@ -140,6 +140,7 @@ MonoBehaviour:
   forcaEmpurraoHorizontal: 3
   forcaEmpurraoVertical: 3
   fallDelay: 0
+  eggCount: 0
 --- !u!95 &4815857525167846206
 Animator:
   serializedVersion: 5
