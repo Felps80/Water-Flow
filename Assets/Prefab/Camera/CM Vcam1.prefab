@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Follow: {fileID: 4815857525167846201, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5.625
+    OrthographicSize: 6.83
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

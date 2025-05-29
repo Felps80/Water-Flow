@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using MeuJogo.Correntes;
 
 public class PlayerController : MonoBehaviour
 {
@@ -79,6 +80,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float alignmentThreshold = 0.2f;  // Distância mínima para considerar alinhado
 
     [SerializeField] private LayerMask correntezaLayer;  
+     // Supondo que você já tenha uma variável para armazenar a corrente em que o player está
+    private CorrenteInversora correnteAtual;
+
+    private enum InversoraState { None, Aligning, Pushing }
+    private InversoraState inversoraState = InversoraState.None;
 
     #endregion 
 
@@ -121,42 +127,75 @@ public class PlayerController : MonoBehaviour
         }
 
         GerenciarCorrentezas();
-
+        UpdateCurrentCorrenteTile();
         // Detecção do chão usando Raycast
         RaycastCheckGround();
     } //Função chamada a cada frame
 
     void FixedUpdate()
     {
-        if (isDashing || emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai)
+        if (isDashing)
         {
-            if (awaVSub || awaVBai || emAwaVertical)
-                meuRB.velocity = new Vector2(0f, meuRB.velocity.y); // Zera velocidade horizontal
             return;
         }
 
-        // Atualiza o tile ativo da correnteza
-        UpdateCurrentCorrenteTile();
+        // --- SISTEMA DE CORRENTE INVERSORA ---
+        if (correnteAtual != null)
+        {
+            // Obtem a direção atual da corrente inversora e o centro do tile
+            Vector2 invDir = correnteAtual.ObterDirecao();
+            Vector2 tileCenter = correnteAtual.transform.position;
 
-        // Se estiver sob efeito de correnteza...
+            // Se ainda não foi definido, inicia o estado de alinhamento
+            if (inversoraState == InversoraState.None)
+            {
+                inversoraState = InversoraState.Aligning;
+            }
+
+            if (inversoraState == InversoraState.Aligning)
+            {
+                Vector2 pos = transform.position;
+                // Se a corrente age horizontalmente, alinhe verticalmente; se verticalmente, alinhe horizontalmente.
+                if (Mathf.Abs(invDir.x) > 0.1f)
+                {
+                    pos.y = Mathf.MoveTowards(pos.y, tileCenter.y, alignmentSpeed * Time.fixedDeltaTime);
+                }
+                else if (Mathf.Abs(invDir.y) > 0.1f)
+                {
+                    pos.x = Mathf.MoveTowards(pos.x, tileCenter.x, alignmentSpeed * Time.fixedDeltaTime);
+                }
+                transform.position = pos;
+
+                // Quando estiver próximo o suficiente (baseado em alignmentThreshold), passa para a fase de empuxo.
+                if ((Mathf.Abs(invDir.x) > 0.1f && Mathf.Abs(pos.y - tileCenter.y) < alignmentThreshold) ||
+                    (Mathf.Abs(invDir.y) > 0.1f && Mathf.Abs(pos.x - tileCenter.x) < alignmentThreshold))
+                {
+                    inversoraState = InversoraState.Pushing;
+                }
+                return; // Não processa o restante enquanto alinha.
+            }
+
+            if (inversoraState == InversoraState.Pushing)
+            {
+                meuRB.gravityScale = 0f;
+                meuRB.velocity = invDir * correnteAtual.velocidade;
+                meuAnim.SetBool("Movendo", false);
+                return;
+            }
+        }
+
+        // --- SISTEMA DE CORRENTEZA 2.0 (Normal) ---
         if (isInCorrenteza && currentCorrenteTile != null)
         {
-            // Fase de alinhamento
             if (correntezaState == CorrentezaState.Aligning)
             {
-                // Limpa a velocidade no eixo que atrapalha o alinhamento
                 Vector2 vel = meuRB.velocity;
-                if (currentDirection.x != 0)  // Corrente horizontal, alinhamos verticalmente
-                {
+                if (currentDirection.x != 0)
                     vel.y = 0;
-                }
-                else if (currentDirection.y != 0)  // Corrente vertical, alinhamos horizontalmente
-                {
+                else if (currentDirection.y != 0)
                     vel.x = 0;
-                }
                 meuRB.velocity = vel;
 
-                // Alinha o jogador para o centro do tile
                 Vector2 pos = transform.position;
                 if (currentDirection == Vector2.right || currentDirection == Vector2.left)
                 {
@@ -170,23 +209,15 @@ public class PlayerController : MonoBehaviour
                 }
                 transform.position = pos;
 
-                // Verifica se o alinhamento foi concluído
-                if (
-                    (currentDirection.x != 0 && Mathf.Abs(pos.y - currentCorrenteTile.transform.position.y) < alignmentThreshold) ||
-                    (currentDirection.y != 0 && Mathf.Abs(pos.x - currentCorrenteTile.transform.position.x) < alignmentThreshold)
-                )
+                if ((currentDirection.x != 0 && Mathf.Abs(pos.y - currentCorrenteTile.transform.position.y) < alignmentThreshold) ||
+                    (currentDirection.y != 0 && Mathf.Abs(pos.x - currentCorrenteTile.transform.position.x) < alignmentThreshold))
                 {
                     correntezaState = CorrentezaState.Pushing;
                 }
-
-                // Enquanto estiver alinhando, não executa a movimentação manual
                 return;
             }
-
-            // Fase de empuxo (Pushing)
             if (correntezaState == CorrentezaState.Pushing)
             {
-                // Desativa a gravidade e empurra o jogador na direção e velocidade definidas
                 meuRB.gravityScale = 0f;
                 meuRB.velocity = currentDirection * currentSpeed;
                 meuAnim.SetBool("Movendo", false);
@@ -407,30 +438,42 @@ public class PlayerController : MonoBehaviour
         dashMobile = true;
     } //Dash para mobile
 
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("ovocelente"))
+        // Coleta de ovo: Quando o player pega um ovo, todas as correntes inversoras invertem sua direção
+        if (other.CompareTag("Egg"))
         {
-            direcaoEmpurraoHorizontal *= -1;
-            direcaoEmpurraoVertical *= -1;
+            GameObject[] todasCorrentes = GameObject.FindGameObjectsWithTag("CorrenteInversora");
+            foreach (GameObject obj in todasCorrentes)
+            {
+                CorrenteInversora corrente = obj.GetComponent<CorrenteInversora>();
+                if (corrente != null)
+                {
+                    corrente.InverterDirecao();
+                }
+            }
+            AddEgg();
             Destroy(other.gameObject);
         }
 
-        if (other.CompareTag("awaHorizontal")) emAwaHorizontal = true;
-        if (other.CompareTag("awaVertical")) emAwaVertical = true;
-        if (other.CompareTag("awaHDir")) awaHDir = true;
-        if (other.CompareTag("awaHEs")) awaHEs = true;
-        if (other.CompareTag("awaVSub")) awaVSub = true;
-        if (other.CompareTag("awaVBai")) awaVBai = true;
+        // Ao entrar em um tile de CorrenteInversora, atualiza a referência e reseta o estado de alinhamento
+        if (other.CompareTag("CorrenteInversora"))
+        {
+            CorrenteInversora novaCorrente = other.GetComponent<CorrenteInversora>();
+            if (novaCorrente != null)
+            {
+                correnteAtual = novaCorrente;
+                inversoraState = InversoraState.None;  // Será definido como Aligning no FixedUpdate
+            }
+        }
 
+        // Ao entrar em um tile de Correnteza (normal)
         if (other.CompareTag("Correnteza"))
         {
             CorrenteTile tileNova = other.GetComponent<CorrenteTile>();
             if (tileNova != null)
             {
-                // Se já estiver em uma corrente, mas essa nova tem direção diferente,
-                // reinicia o alinhamento para a nova corrente.
                 if (currentCorrenteTile != null && currentCorrenteTile != tileNova &&
                     tileNova.ObterDirecao() != currentDirection)
                 {
@@ -449,35 +492,32 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-    } //Colisão ao entrar em contato
+    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        // Saída de tile de Correnteza (normal)
         if (other.CompareTag("Correnteza"))
         {
-            // Quando sair da área de correnteza, desativa o efeito
             isInCorrenteza = false;
             correntezaState = CorrentezaState.None;
             currentCorrenteTile = null;
             currentDirection = Vector2.zero;
             currentSpeed = 0f;
-            meuRB.gravityScale = 1f; // Restaura a gravidade padrão
+            meuRB.gravityScale = 1f;
         }
 
-        if (other.CompareTag("awaHorizontal")) emAwaHorizontal = false;
-        if (other.CompareTag("awaVertical")) emAwaVertical = false;
-        if (other.CompareTag("awaHDir")) awaHDir = false;
-        if (other.CompareTag("awaHEs")) awaHEs = false;
-        if (other.CompareTag("awaVSub")) awaVSub = false;
-        if (other.CompareTag("awaVBai")) awaVBai = false;
-
-        if (other.CompareTag("awaVertical") || other.CompareTag("awaVSub") || other.CompareTag("awaVBai"))
+        // Saída de tile de CorrenteInversora: limpa a referência e reseta o estado de inversora
+        if (other.CompareTag("CorrenteInversora"))
         {
-            desacelerandoVertical = true;
-            desaceleracaoTimer = 0f;
+            CorrenteInversora ci = other.GetComponent<CorrenteInversora>();
+            if (ci != null && correnteAtual == ci)
+            {
+                correnteAtual = null;
+                inversoraState = InversoraState.None;
+            }
         }
-    } //Colisão ao sair de contato
-
+    }
 
     private void GerenciarCorrentezas()
     {
@@ -572,27 +612,21 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateCurrentCorrenteTile()
     {
-        // Defina o tamanho da área de checagem – ajuste esse valor conforme o tamanho do seu player/tile.
+        // Este método processa o sistema de correnteza normal (2.0)
         Vector2 boxSize = new Vector2(0.5f, 0.5f);
-
-        // Procura por todos os colliders na área ao redor do player, filtrando pelo layer de correnteza
         Collider2D[] results = Physics2D.OverlapBoxAll(transform.position, boxSize, 0f, correntezaLayer);
 
         if (results.Length > 0)
         {
             CorrenteTile bestTile = null;
             float bestDistance = Mathf.Infinity;
-
-            // Itera entre todos os colliders encontrados
             foreach (Collider2D col in results)
             {
-                // Verifica se o objeto tem a tag "Correnteza" (ou você pode verificar se possui o componente CorrenteTile)
                 if (col.CompareTag("Correnteza"))
                 {
                     CorrenteTile tile = col.GetComponent<CorrenteTile>();
                     if (tile != null)
                     {
-                        // Mede a distância entre o player e o centro do tile (usando transform.position do tile)
                         float d = Vector2.Distance(transform.position, tile.transform.position);
                         if (d < bestDistance)
                         {
@@ -602,26 +636,20 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-
             if (bestTile != null)
             {
-                // Se o tile atual for diferente do tile previamente selecionado,
-                // reinicia o estado de alinhamento para a nova correnteza.
                 if (currentCorrenteTile != bestTile)
                 {
                     currentCorrenteTile = bestTile;
                     correntezaState = CorrentezaState.Aligning;
-                    currentDirection = bestTile.ObterDirecao(); // supondo que essa função já esteja definida
+                    currentDirection = bestTile.ObterDirecao();
                     currentSpeed = bestTile.velocidade;
                 }
                 isInCorrenteza = true;
                 return;
             }
         }
-
-        // Se nenhum tile for encontrado
         currentCorrenteTile = null;
         isInCorrenteza = false;
-    } //Permite que o player consgia trocar de correnteza sem problema 
-
+    }
 }

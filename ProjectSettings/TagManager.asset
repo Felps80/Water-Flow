@@ -16,6 +16,7 @@ TagManager:
   - Chao
   - Egg
   - Correnteza
+  - CorrenteInversora
   layers:
   - Default
   - TransparentFX
