@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
             Pulando();
             CheckDash();
             dashCooldownRestante = Mathf.Max(0f, (lastDashTime + dashCooldown) - Time.time);
-            Debug.Log("Cooldown do Dash: " + dashCooldownRestante.ToString("F2") + " segundos");
+            //Debug.Log("Cooldown do Dash: " + dashCooldownRestante.ToString("F2") + " segundos");
         }
 
         GerenciarCorrentezas();
@@ -453,7 +453,7 @@ public class PlayerController : MonoBehaviour
                     corrente.InverterDirecao();
                 }
             }
-            AddEgg();
+            //AddEgg();
             Destroy(other.gameObject);
         }
 
@@ -565,7 +565,7 @@ public class PlayerController : MonoBehaviour
                 pulosDisponiveis = totalPulos;
                 noChao = true;
                 meuAnim.SetBool("NoChao", true);
-                Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
+                //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
             }
         }
         else
@@ -601,10 +601,12 @@ public class PlayerController : MonoBehaviour
 
     public void AddEgg()
     {
+        Debug.Log("antes: " + eggCount);
         eggCount++;   
 
         if (eggCount >= 3)
         {
+            Debug.Log("dentro do if: " + eggCount);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 

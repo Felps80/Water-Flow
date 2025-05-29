@@ -2,25 +2,26 @@ using UnityEngine;
 
 public class EggScript : MonoBehaviour
 {
-    // Você pode criar eventos ou chamar métodos específicos aqui,
-    // como alterar as configurações de correnteza ou aumentar
-    // a pontuação, etc.
+    // Vocï¿½ pode criar eventos ou chamar mï¿½todos especï¿½ficos aqui,
+    // como alterar as configuraï¿½ï¿½es de correnteza ou aumentar
+    // a pontuaï¿½ï¿½o, etc.
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Verifica se o que colidiu com o ovo é o Player (verificando a tag)
+        // Verifica se o que colidiu com o ovo ï¿½ o Player (verificando a tag)
         if (other.CompareTag("Player"))
         {
             PlayerController playerController = other.GetComponent<PlayerController>();
 
             if (playerController != null)
             {
+                Debug.Log("addEgg no eggscript");
                 playerController.AddEgg();
             }
 
             else
             {
-                Debug.LogWarning("PlayerController não encontrado no objeto Player!");
+                Debug.LogWarning("PlayerController nï¿½o encontrado no objeto Player!");
             }
 
 
