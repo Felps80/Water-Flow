@@ -8160,7 +8160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_383
+      name: PlatJTL
       rect:
         serializedVersion: 2
         x: 576
@@ -8181,7 +8181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_384
+      name: PlatJTR
       rect:
         serializedVersion: 2
         x: 640
@@ -8202,7 +8202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_385
+      name: PlatJTL.3
       rect:
         serializedVersion: 2
         x: 672
@@ -8223,7 +8223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_386
+      name: PlatJTR.3
       rect:
         serializedVersion: 2
         x: 736
@@ -8391,7 +8391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_394
+      name: PlatJTL.1
       rect:
         serializedVersion: 2
         x: 576
@@ -8412,7 +8412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_395
+      name: PlatJTR.1
       rect:
         serializedVersion: 2
         x: 640
@@ -8433,7 +8433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_396
+      name: PlatJTL.4
       rect:
         serializedVersion: 2
         x: 672
@@ -8454,7 +8454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_397
+      name: PlatJTR.4
       rect:
         serializedVersion: 2
         x: 736
@@ -8496,7 +8496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_399
+      name: PlatJTL.2
       rect:
         serializedVersion: 2
         x: 576
@@ -8517,7 +8517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_400
+      name: PlatJTR.2
       rect:
         serializedVersion: 2
         x: 640
@@ -8538,7 +8538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_401
+      name: PlatJTL.5
       rect:
         serializedVersion: 2
         x: 672
@@ -8559,7 +8559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_402
+      name: PlatJTR.5
       rect:
         serializedVersion: 2
         x: 736
@@ -11275,6 +11275,18 @@ TextureImporter:
       EspinhoG4: -1269575577
       EspinhoG5: 91422318
       EspinhoG6: -961159403
+      PlatJTL: 137475101
+      PlatJTL.1: 1677014453
+      PlatJTL.2: 41037689
+      PlatJTL.3: -937345703
+      PlatJTL.4: 1504148439
+      PlatJTL.5: 1222581530
+      PlatJTR: -1417621534
+      PlatJTR.1: 1528612064
+      PlatJTR.2: -587448241
+      PlatJTR.3: -2021431020
+      PlatJTR.4: -433642264
+      PlatJTR.5: 1242407873
       SpikeA1: -981414011
       SpikeA1.1: 1849186487
       SpikeA1.2: 805361724
@@ -11603,10 +11615,6 @@ TextureImporter:
       SpritesJuntas2_380: -1001730884
       SpritesJuntas2_381: 1960316754
       SpritesJuntas2_382: -1062215439
-      SpritesJuntas2_383: 137475101
-      SpritesJuntas2_384: -1417621534
-      SpritesJuntas2_385: -937345703
-      SpritesJuntas2_386: -2021431020
       SpritesJuntas2_387: -2121083509
       SpritesJuntas2_388: 805641392
       SpritesJuntas2_389: -1702315781
@@ -11615,17 +11623,9 @@ TextureImporter:
       SpritesJuntas2_391: -324263425
       SpritesJuntas2_392: -1002187844
       SpritesJuntas2_393: -902145792
-      SpritesJuntas2_394: 1677014453
-      SpritesJuntas2_395: 1528612064
-      SpritesJuntas2_396: 1504148439
-      SpritesJuntas2_397: -433642264
       SpritesJuntas2_398: -99566958
-      SpritesJuntas2_399: 41037689
       SpritesJuntas2_4: -1769661861
       SpritesJuntas2_40: -277441103
-      SpritesJuntas2_400: -587448241
-      SpritesJuntas2_401: 1222581530
-      SpritesJuntas2_402: 1242407873
       SpritesJuntas2_403: -902404591
       SpritesJuntas2_404: 904819540
       SpritesJuntas2_405: 1810773046
