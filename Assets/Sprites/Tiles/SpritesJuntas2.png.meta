@@ -7299,7 +7299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_342
+      name: PlatFormJTL.6
       rect:
         serializedVersion: 2
         x: 576
@@ -7320,7 +7320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_343
+      name: PlatFormJTM.6
       rect:
         serializedVersion: 2
         x: 608
@@ -7341,7 +7341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_344
+      name: PlatFormJTR.6
       rect:
         serializedVersion: 2
         x: 640
@@ -7362,7 +7362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_345
+      name: PlatFormJTL.10
       rect:
         serializedVersion: 2
         x: 672
@@ -7383,7 +7383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_346
+      name: PlatFormJTM.10
       rect:
         serializedVersion: 2
         x: 704
@@ -7404,7 +7404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_347
+      name: PlatFormJTR.10
       rect:
         serializedVersion: 2
         x: 736
@@ -7425,7 +7425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_348
+      name: PlatFormJTL.7
       rect:
         serializedVersion: 2
         x: 576
@@ -7446,7 +7446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_349
+      name: PlatFormJTM.7
       rect:
         serializedVersion: 2
         x: 608
@@ -7467,7 +7467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_350
+      name: PlatFormJTR.7
       rect:
         serializedVersion: 2
         x: 640
@@ -7488,7 +7488,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_351
+      name: PlatFormJTL.11
       rect:
         serializedVersion: 2
         x: 672
@@ -7509,7 +7509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_352
+      name: PlatFormJTM.11
       rect:
         serializedVersion: 2
         x: 704
@@ -7530,7 +7530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_353
+      name: PlatFormJTR.11
       rect:
         serializedVersion: 2
         x: 736
@@ -7719,7 +7719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_362
+      name: PlatFormJTL.8
       rect:
         serializedVersion: 2
         x: 576
@@ -7740,7 +7740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_363
+      name: PlatFormJTM.8
       rect:
         serializedVersion: 2
         x: 608
@@ -7761,7 +7761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_364
+      name: PlatFormJTR.8
       rect:
         serializedVersion: 2
         x: 640
@@ -7782,7 +7782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_365
+      name: PlatFormJTL.12
       rect:
         serializedVersion: 2
         x: 672
@@ -7803,7 +7803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_366
+      name: PlatFormJTM.12
       rect:
         serializedVersion: 2
         x: 704
@@ -7824,7 +7824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_367
+      name: PlatFormJTR.12
       rect:
         serializedVersion: 2
         x: 736
@@ -7845,7 +7845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_368
+      name: PlatFormJTL.9
       rect:
         serializedVersion: 2
         x: 576
@@ -7866,7 +7866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_369
+      name: PlatFormJTM.9
       rect:
         serializedVersion: 2
         x: 608
@@ -7887,7 +7887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_370
+      name: PlatFormJTR.9
       rect:
         serializedVersion: 2
         x: 640
@@ -7908,7 +7908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_371
+      name: PlatFormJTL.13
       rect:
         serializedVersion: 2
         x: 672
@@ -7929,7 +7929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_372
+      name: PlatFormJTM.13
       rect:
         serializedVersion: 2
         x: 704
@@ -7950,7 +7950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpritesJuntas2_373
+      name: PlatFormJTR.13
       rect:
         serializedVersion: 2
         x: 736
@@ -8520,7 +8520,7 @@ TextureImporter:
       name: PlatJTR.2
       rect:
         serializedVersion: 2
-        x: 640
+        x: 639
         y: 1696
         width: 32
         height: 32
@@ -11275,6 +11275,30 @@ TextureImporter:
       EspinhoG4: -1269575577
       EspinhoG5: 91422318
       EspinhoG6: -961159403
+      PlatFormJTL.10: 623175445
+      PlatFormJTL.11: -906915860
+      PlatFormJTL.12: -861987153
+      PlatFormJTL.13: -301332393
+      PlatFormJTL.6: -1410422814
+      PlatFormJTL.7: -605208971
+      PlatFormJTL.8: 1523163082
+      PlatFormJTL.9: 2137864717
+      PlatFormJTM.10: 286063689
+      PlatFormJTM.11: 821528701
+      PlatFormJTM.12: -2139800055
+      PlatFormJTM.13: 509428732
+      PlatFormJTM.6: 1452889161
+      PlatFormJTM.7: 1999171892
+      PlatFormJTM.8: -837515592
+      PlatFormJTM.9: 571218130
+      PlatFormJTR.10: -960714429
+      PlatFormJTR.11: -738877502
+      PlatFormJTR.12: 1073642856
+      PlatFormJTR.13: -1972156664
+      PlatFormJTR.6: 1658720804
+      PlatFormJTR.7: 432595936
+      PlatFormJTR.8: 913978915
+      PlatFormJTR.9: 291195027
       PlatJTL: 137475101
       PlatJTL.1: 1677014453
       PlatJTL.2: 41037689
@@ -11570,19 +11594,7 @@ TextureImporter:
       SpritesJuntas2_34: 1510766121
       SpritesJuntas2_340: 885400406
       SpritesJuntas2_341: -573410962
-      SpritesJuntas2_342: -1410422814
-      SpritesJuntas2_343: 1452889161
-      SpritesJuntas2_344: 1658720804
-      SpritesJuntas2_345: 623175445
-      SpritesJuntas2_346: 286063689
-      SpritesJuntas2_347: -960714429
-      SpritesJuntas2_348: -605208971
-      SpritesJuntas2_349: 1999171892
       SpritesJuntas2_35: -1203810794
-      SpritesJuntas2_350: 432595936
-      SpritesJuntas2_351: -906915860
-      SpritesJuntas2_352: 821528701
-      SpritesJuntas2_353: -738877502
       SpritesJuntas2_354: -422496273
       SpritesJuntas2_355: -236599982
       SpritesJuntas2_356: 620921011
@@ -11592,19 +11604,7 @@ TextureImporter:
       SpritesJuntas2_36: 617148186
       SpritesJuntas2_360: -111970827
       SpritesJuntas2_361: 1864486927
-      SpritesJuntas2_362: 1523163082
-      SpritesJuntas2_363: -837515592
-      SpritesJuntas2_364: 913978915
-      SpritesJuntas2_365: -861987153
-      SpritesJuntas2_366: -2139800055
-      SpritesJuntas2_367: 1073642856
-      SpritesJuntas2_368: 2137864717
-      SpritesJuntas2_369: 571218130
       SpritesJuntas2_37: 1646104990
-      SpritesJuntas2_370: 291195027
-      SpritesJuntas2_371: -301332393
-      SpritesJuntas2_372: 509428732
-      SpritesJuntas2_373: -1972156664
       SpritesJuntas2_374: -1593522631
       SpritesJuntas2_375: 1231283163
       SpritesJuntas2_376: 482145032
