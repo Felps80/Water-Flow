@@ -616,15 +616,12 @@ public class PlayerController : MonoBehaviour
 
     private void ResetCorrenteInversoras()
     {
-        // Obtém todos os objetos com a tag "CorrenteInversora"
         GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
         foreach (GameObject obj in inversoras)
         {
-            // Note que usamos o namespace completo para garantir que o componente seja encontrado.
             CorrenteInversora ci = obj.GetComponent<MeuJogo.Correntes.CorrenteInversora>();
             if (ci != null)
             {
-                // Chama os métodos para resetar a posição e a direção
                 ci.ResetPosicao();
                 ci.ResetDirecao();
             }

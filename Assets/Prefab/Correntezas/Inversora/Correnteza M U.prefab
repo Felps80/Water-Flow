@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direcao: 2
   velocidade: 5
+  animator: {fileID: 6927004665131087757}
 --- !u!212 &6712005166124059863
 SpriteRenderer:
   m_ObjectHideFlags: 0

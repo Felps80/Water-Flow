@@ -22,12 +22,14 @@ namespace MeuJogo.Correntes
         // NOVO: Armazena a posição original do objeto.
         private Vector3 originalPosition;
         private DirecaoCorrente direcaoOriginal;
+        public Animator animator;
 
         private void Start()
         {
             AtualizarDirecao();
             originalPosition = transform.position;
             direcaoOriginal = direcao;
+            AtualizarAnimacao();
         }
 
         // Atualiza o vetor de direção com base na direção definida
@@ -83,6 +85,7 @@ namespace MeuJogo.Correntes
                     direcao = DirecaoCorrente.Cima;
                     break;
             }
+             AtualizarAnimacao();
         }
         // NOVO: Método para resetar a posição para a original.
         public void ResetPosicao()
@@ -94,6 +97,32 @@ namespace MeuJogo.Correntes
         {
             direcao = direcaoOriginal;
             AtualizarDirecao();
+            AtualizarAnimacao();
+        }
+
+        private void AtualizarAnimacao()
+        {
+            if (animator == null)
+                return;
+
+            Debug.Log($"Atualizando animação para a direção: {direcao}");
+
+            // Atualize os nomes das animações para os que você criou.
+            switch (direcao)
+            {
+                case DirecaoCorrente.Cima:
+                    animator.Play("Correnteza M U");
+                    break;
+                case DirecaoCorrente.Baixo:
+                    animator.Play("Correnteza M D");
+                    break;
+                case DirecaoCorrente.Esquerda:
+                    animator.Play("Correnteza M L");
+                    break;
+                case DirecaoCorrente.Direita:
+                    animator.Play("Correnteza M R");
+                    break;
+            }
         }
 
 
