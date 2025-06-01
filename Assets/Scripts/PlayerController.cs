@@ -117,6 +117,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.GameIsPaused) return;
+
         if (!isDashing)
         {
             ControleMovimento();
