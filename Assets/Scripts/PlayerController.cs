@@ -428,10 +428,9 @@ public class PlayerController : MonoBehaviour
     } //Contador de temopo do dash
 
     public void PularMobile()
-    {
-        puloMobile = true;
-        pulosDisponiveis = totalPulos;
-    } //Pulo para Mobile
+{
+    puloMobile = true;
+}
 
     public void DashMobile()
     {
@@ -447,6 +446,7 @@ public class PlayerController : MonoBehaviour
             GameObject[] todasCorrentes = GameObject.FindGameObjectsWithTag("CorrenteInversora");
             foreach (GameObject obj in todasCorrentes)
             {
+
                 CorrenteInversora corrente = obj.GetComponent<CorrenteInversora>();
                 if (corrente != null)
                 {
