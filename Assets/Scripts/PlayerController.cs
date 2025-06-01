@@ -429,6 +429,7 @@ public class PlayerController : MonoBehaviour
 
     public void PularMobile()
 {
+    Debug.Log("Pulo Mobile apertado!");
     puloMobile = true;
 }
 

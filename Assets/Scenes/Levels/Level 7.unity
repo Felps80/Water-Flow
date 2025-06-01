@@ -9264,6 +9264,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+--- !u!114 &319681605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8882968553910435640, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+  m_PrefabInstance: {fileID: 319681604}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd05fbc5aac0ec49b1f0e3e7525a795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &335339400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10119,7 +10130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 8.953125
+      value: 5.3125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_RootOrder
@@ -10127,11 +10138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.91698176
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.046414852
+      value: -2.2800002
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11915,6 +11926,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 319681605}
     - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
       propertyPath: raycastDistance
       value: 0.3

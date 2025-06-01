@@ -1,39 +1,46 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
+public class JoystickController : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    private RectTransform joystickBackground;
-    private RectTransform joystickHandle;
+    [Header("Referências do Joystick")]
+    [SerializeField] private RectTransform joystickBackground;  // Arraste aqui o fundo do joystick
+    [SerializeField] private RectTransform joystickHandle;      // Arraste aqui a alça do joystick
 
     private Vector2 inputVector;
 
+    // Getters públicos para acesso externo
     public float Horizontal => inputVector.x;
     public float Vertical => inputVector.y;
-    public Vector2 Direction => new Vector2(Horizontal, Vertical);
+    public Vector2 Direction => inputVector;
 
     private void Start()
     {
-        joystickBackground = GetComponent<RectTransform>();
-        joystickHandle = transform.GetChild(0).GetComponent<RectTransform>();
+        if (joystickBackground == null || joystickHandle == null)
+        {
+            Debug.LogError("JoystickController: Referências não atribuídas no Inspector!");
+        }
+        else if (joystickBackground.sizeDelta == Vector2.zero)
+        {
+            Debug.LogWarning("JoystickController: 'sizeDelta' do background é zero, verifique o RectTransform.");
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 pos;
-        // Converte a posição do toque/mouse para o espaço local do joystick
+
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            joystickBackground, 
-            eventData.position, 
-            eventData.pressEventCamera, 
+            joystickBackground,
+            eventData.position,
+            eventData.pressEventCamera,
             out pos))
         {
             // Normaliza a posição dentro do raio do joystick
-            pos.x = (pos.x / joystickBackground.sizeDelta.x);
-            pos.y = (pos.y / joystickBackground.sizeDelta.y);
+            pos.x = pos.x / (joystickBackground.sizeDelta.x / 2);
+            pos.y = pos.y / (joystickBackground.sizeDelta.y / 2);
 
-            // Multiplica por 2 para alcançar o centro
-            inputVector = new Vector2(pos.x * 2, pos.y * 2);
+            inputVector = new Vector2(pos.x, pos.y);
             inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
 
             // Move a alça do joystick
