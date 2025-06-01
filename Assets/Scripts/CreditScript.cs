@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CreditScript : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class CreditScript : MonoBehaviour
     public void StartCredits()
     {
         rectTransform.anchoredPosition = StartPosition;
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 
 }
