@@ -11,6 +11,7 @@ namespace MeuJogo.Correntes
         Baixo
     }
 
+
     public class CorrenteInversora : MonoBehaviour
     {
         [Header("Configuração da Corrente Inversora")]
@@ -18,10 +19,15 @@ namespace MeuJogo.Correntes
         public float velocidade = 5f;     // Velocidade com que a corrente empurra o player
 
         private Vector2 correnteDirection;
+        // NOVO: Armazena a posição original do objeto.
+        private Vector3 originalPosition;
+        private DirecaoCorrente direcaoOriginal;
 
         private void Start()
         {
             AtualizarDirecao();
+            originalPosition = transform.position;
+            direcaoOriginal = direcao;
         }
 
         // Atualiza o vetor de direção com base na direção definida
@@ -78,5 +84,18 @@ namespace MeuJogo.Correntes
                     break;
             }
         }
+        // NOVO: Método para resetar a posição para a original.
+        public void ResetPosicao()
+        {
+            transform.position = originalPosition;
+        }
+
+        public void ResetDirecao()
+        {
+            direcao = direcaoOriginal;
+            AtualizarDirecao();
+        }
+
+
     }
 }

@@ -367,7 +367,7 @@ public class PlayerController : MonoBehaviour
     private void CheckDash()
     {
         // Se estiver na correnteza, não permite dash
-        if (isInCorrenteza)
+        if (isInCorrenteza || correnteAtual != null)
             return;
 
         if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai)
@@ -591,6 +591,8 @@ public class PlayerController : MonoBehaviour
         transform.position = startPosition;
         eggCount = 0; // Reset player's egg count
         Debug.Log("Player died. Egg count reset.");
+        ResetCorrenteInversorasPosicao();
+        ResetCorrenteInversoras();
 
         // Tell EggManager to respawn the eggs.
         if (EggManager.instance != null)
@@ -598,6 +600,36 @@ public class PlayerController : MonoBehaviour
             EggManager.instance.RespawnEggs();
         }
     } //Mata o Player
+
+    private void ResetCorrenteInversorasPosicao()
+    {
+        GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
+        foreach (GameObject obj in inversoras)
+        {
+            CorrenteInversora ci = obj.GetComponent<CorrenteInversora>();
+            if (ci != null)
+            {
+                ci.ResetPosicao();
+            }
+        }
+    }
+
+    private void ResetCorrenteInversoras()
+    {
+        // Obtém todos os objetos com a tag "CorrenteInversora"
+        GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
+        foreach (GameObject obj in inversoras)
+        {
+            // Note que usamos o namespace completo para garantir que o componente seja encontrado.
+            CorrenteInversora ci = obj.GetComponent<MeuJogo.Correntes.CorrenteInversora>();
+            if (ci != null)
+            {
+                // Chama os métodos para resetar a posição e a direção
+                ci.ResetPosicao();
+                ci.ResetDirecao();
+            }
+        }
+    }
 
     public void AddEgg()
     {
@@ -654,4 +686,5 @@ public class PlayerController : MonoBehaviour
         currentCorrenteTile = null;
         isInCorrenteza = false;
     }
+   
 }
