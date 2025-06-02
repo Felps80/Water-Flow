@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
         // If an instance exists and it’s not this, destroy this duplicate.
         if (instance != null && instance != this)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             return;
         }
         instance = this;
@@ -75,6 +75,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
+    }
+
+    public void PauseButton()
+    {
+        Pause();
+        pauseMenuUI.SetActive(true);
+        Debug.Log("Apertou");
     }
 
 }
