@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4815857525167846205}
   - component: {fileID: 4815857525167846206}
   - component: {fileID: 5267314068068914254}
+  - component: {fileID: 2280234176999237132}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2138226807
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5b3c0d9f49343834aaa96cb0c5e7fdaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,7 +137,7 @@ MonoBehaviour:
   dashDuration: 0.25
   dashCooldown: 0.8
   dashCooldownRestante: 0
-  joystick: {fileID: 0}
+  joystick: {fileID: 641009072294467198, guid: c0b757c10081d0e48b0d0e0d24bfa38f, type: 3}
   forcaEmpurraoHorizontal: 3
   forcaEmpurraoVertical: 3
   alignmentSpeed: 5
@@ -185,3 +186,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.030338941, y: -0.055475056}
   m_Size: {x: 0.46268708, y: 0.19859825}
   m_Direction: 1
+--- !u!114 &2280234176999237132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815857525167846207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd05fbc5aac0ec49b1f0e3e7525a795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

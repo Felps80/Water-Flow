@@ -800,7 +800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 8.4375
+      value: 8.953125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_RootOrder
@@ -820,11 +820,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00002670288
+      value: -0.91698265
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5630207
+      value: -0.04641056
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13214,11 +13214,11 @@ PrefabInstance:
       objectReference: {fileID: 1792475074}
     - target: {fileID: 5958189812583226654, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMenu
+      value: PauseButton
       objectReference: {fileID: 0}
     - target: {fileID: 8882968552547702681, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_Text
-      value: 
+      value: PULO
       objectReference: {fileID: 0}
     - target: {fileID: 8882968552888903829, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

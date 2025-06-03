@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldownRestante;
     private bool isDashing = false;
     private Vector2 dashDirection;
+    private int dashDisponives = 1;
 
     private bool puloMobile = false;
     private bool dashMobile = false;
@@ -372,10 +373,16 @@ public class PlayerController : MonoBehaviour
         if (isInCorrenteza || correnteAtual != null)
             return;
 
+       
+      
+
         if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai)
         {
             return;
         }
+
+        if (dashDisponives <= 0)
+            return;
 
 
         if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
@@ -408,6 +415,7 @@ public class PlayerController : MonoBehaviour
             }
 
             dashMobile = false;
+            dashDisponives--;
             StartCoroutine(Dash());
         }
     } //Checa para ver se pode dar dash
@@ -568,6 +576,7 @@ public class PlayerController : MonoBehaviour
                 noChao = true;
                 meuAnim.SetBool("NoChao", true);
                 //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
+                dashDisponives = 1;
             }
         }
         else

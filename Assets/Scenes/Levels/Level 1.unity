@@ -10292,6 +10292,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8882968552888903829, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1510488125}
+    - target: {fileID: 8882968552888903829, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DashMobile
+      objectReference: {fileID: 0}
     - target: {fileID: 8882968552993317982, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -10299,6 +10307,14 @@ PrefabInstance:
     - target: {fileID: 8882968553515276417, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882968553515276670, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1510488125}
+    - target: {fileID: 8882968553515276670, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PularMobile
       objectReference: {fileID: 0}
     - target: {fileID: 8882968554059003624, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -11309,6 +11325,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6200000, guid: 4fcc2de5d9b139f4faef45f0d6e5ff0c, type: 2}
     - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1533881976}
+    - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
       propertyPath: airMaterial
       value: 
       objectReference: {fileID: 6200000, guid: e6ea400356613a0488225fd62f09539a, type: 2}
@@ -11388,6 +11408,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6167045721132011319, guid: 8029860b33f1ad641b2c41cc2c9071c8, type: 3}
   m_PrefabInstance: {fileID: 1473081034}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1510488125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
+  m_PrefabInstance: {fileID: 1454437319}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942eaf2fa4ab92d49ab31086da676ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1522326707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11450,6 +11481,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8647259239692498323, guid: 60ede0a33cce1e34796ff74d32909214, type: 3}
   m_PrefabInstance: {fileID: 1522326707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533881976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8882968553910435640, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+  m_PrefabInstance: {fileID: 699606193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd05fbc5aac0ec49b1f0e3e7525a795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1534602513
 PrefabInstance:
   m_ObjectHideFlags: 0
