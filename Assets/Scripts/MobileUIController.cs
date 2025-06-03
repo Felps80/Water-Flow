@@ -6,7 +6,7 @@ public class MobileUIController : MonoBehaviour
 
     void Start()
     {
-        // Verifica se está rodando em Android ou iOS
+        // Verifica se estï¿½ rodando em Android ou iOS
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
             mobileCanvas.SetActive(true);  // Ativa o Canvas Mobile
