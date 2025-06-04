@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float decceleration = 2f;
     [SerializeField] private float velPower = 2f;
     [SerializeField] private int totalPulos = 1;
+    
 
     // Variáveis para Raycast
     [SerializeField] private LayerMask groundLayer;
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D meuRB;
     public Animator meuAnim;
-    private CapsuleCollider2D playerCollider;
+    private BoxCollider2D playerCollider;
 
     [SerializeField] private float tempoDesaceleracaoVertical = 0.3f;
     private bool noChao = false;
@@ -106,15 +107,16 @@ public class PlayerController : MonoBehaviour
     //Posição inicial do player
     Vector2 startPosition;
 
-    
+
     void Start()
     {
         meuRB = GetComponent<Rigidbody2D>();
         meuAnim = GetComponent<Animator>();
-        playerCollider = GetComponent<CapsuleCollider2D>();
+        playerCollider = GetComponent<BoxCollider2D>();
         pulosDisponiveis = totalPulos;
         startPosition = transform.position;
-
+        StopSliding();
+        
     } //Função chamada no começo
 
     void Update()
@@ -184,9 +186,10 @@ public class PlayerController : MonoBehaviour
             {
                 meuRB.gravityScale = 0f;
                 meuRB.velocity = invDir * correnteAtual.velocidade;
-               // meuAnim.SetBool("Movendo", false);
+                // meuAnim.SetBool("Movendo", false);
                 return;
             }
+
         }
 
         // --- SISTEMA DE CORRENTEZA 2.0 (Normal) ---
@@ -233,9 +236,24 @@ public class PlayerController : MonoBehaviour
         UpdatePhysicsMaterial();
         MovimentoSuave();
         AtualizarGravidade();
+        ApplyStopThreshold();
+{
+    if (Mathf.Abs(meuRB.velocity.x) < 0.05f)
+    {
+        meuRB.velocity = new Vector2(0, meuRB.velocity.y);
+    }
        
     } //Função chamada a cada alguns frames
 
+
+    void ApplyStopThreshold()
+    {
+        if (Mathf.Abs(meuRB.velocity.x) < 0.05f)
+        {
+            meuRB.velocity = new Vector2(0, meuRB.velocity.y);
+        }
+
+    }
     private void UpdatePhysicsMaterial()
     {
         if (noChao)
@@ -510,195 +528,195 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        // Saída de tile de Correnteza (normal)
-        if (other.CompareTag("Correnteza"))
+        private void OnTriggerExit2D(Collider2D other)
         {
-            isInCorrenteza = false;
-            correntezaState = CorrentezaState.None;
-            currentCorrenteTile = null;
-            currentDirection = Vector2.zero;
-            currentSpeed = 0f;
-            meuRB.gravityScale = 1f;
-        }
-
-        // Saída de tile de CorrenteInversora: limpa a referência e reseta o estado de inversora
-        if (other.CompareTag("CorrenteInversora"))
-        {
-            CorrenteInversora ci = other.GetComponent<CorrenteInversora>();
-            if (ci != null && correnteAtual == ci)
+            // Saída de tile de Correnteza (normal)
+            if (other.CompareTag("Correnteza"))
             {
-                correnteAtual = null;
-                inversoraState = InversoraState.None;
+                isInCorrenteza = false;
+                correntezaState = CorrentezaState.None;
+                currentCorrenteTile = null;
+                currentDirection = Vector2.zero;
+                currentSpeed = 0f;
+                meuRB.gravityScale = 1f;
             }
-        }
-    }
 
-    private void GerenciarCorrentezas()
-    {
-        if (emAwaHorizontal)
-        {
-            meuRB.velocity = new Vector2(forcaEmpurraoHorizontal * direcaoEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-        else if (awaHDir)
-        {
-            meuRB.velocity = new Vector2(forcaEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-        else if (awaHEs)
-        {
-            meuRB.velocity = new Vector2(-forcaEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-
-        if (emAwaVertical)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical * direcaoEmpurraoVertical);
-        }
-        else if (awaVSub)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical);
-        }
-        else if (awaVBai)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, -forcaEmpurraoVertical);
-        }
-    } //Gerencia as correntezas (Antigas)
-
-    
-    private void RaycastCheckGround()
-    {
-        // Define a origem utilizando a borda inferior central do Collider
-        Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
-        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
-
-        if (hit.collider != null && meuRB.velocity.y <= 0)
-        {
-            if (!noChao)
+            // Saída de tile de CorrenteInversora: limpa a referência e reseta o estado de inversora
+            if (other.CompareTag("CorrenteInversora"))
             {
-                pulosDisponiveis = totalPulos;
-                noChao = true;
-                meuAnim.SetBool("isGrounded", false);
-                //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
-                dashDisponives = 1;
-            }
-        }
-        else
-        {
-            noChao = false;
-            meuAnim.SetBool("isGrounded", true);
-        }
-
-    } //Joga um raio para baixo para checar se estamos no chão
-
-    private void OnDrawGizmosSelected()
-    {
-        if (playerCollider != null)
-        {
-            Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
-        }
-    } //Cria um feedback visual do Raycast
-
-    public void Die()
-    {
-        transform.position = startPosition;
-        eggCount = 0; // Reset player's egg count
-        Debug.Log("Player died. Egg count reset.");
-        ResetCorrenteInversorasPosicao();
-        ResetCorrenteInversoras();
-
-        // Tell EggManager to respawn the eggs.
-        if (EggManager.instance != null)
-        {
-            EggManager.instance.RespawnEggs();
-        }
-    } //Mata o Player
-
-    private void ResetCorrenteInversorasPosicao()
-    {
-        GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
-        foreach (GameObject obj in inversoras)
-        {
-            CorrenteInversora ci = obj.GetComponent<CorrenteInversora>();
-            if (ci != null)
-            {
-                ci.ResetPosicao();
-            }
-        }
-    }
-
-    private void ResetCorrenteInversoras()
-    {
-        GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
-        foreach (GameObject obj in inversoras)
-        {
-            CorrenteInversora ci = obj.GetComponent<MeuJogo.Correntes.CorrenteInversora>();
-            if (ci != null)
-            {
-                ci.ResetPosicao();
-                ci.ResetDirecao();
-            }
-        }
-    }
-
-    public void AddEgg()
-    {
-        Debug.Log("antes: " + eggCount);
-        eggCount++;   
-
-        if (eggCount >= 3)
-        {
-            Debug.Log("dentro do if: " + eggCount);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-
-    } //Adiciona ovos na contagem e pula para a proxima fase
-
-    private void UpdateCurrentCorrenteTile()
-    {
-        // Este método processa o sistema de correnteza normal (2.0)
-        Vector2 boxSize = new Vector2(0.5f, 0.5f);
-        Collider2D[] results = Physics2D.OverlapBoxAll(transform.position, boxSize, 0f, correntezaLayer);
-
-        if (results.Length > 0)
-        {
-            CorrenteTile bestTile = null;
-            float bestDistance = Mathf.Infinity;
-            foreach (Collider2D col in results)
-            {
-                if (col.CompareTag("Correnteza"))
+                CorrenteInversora ci = other.GetComponent<CorrenteInversora>();
+                if (ci != null && correnteAtual == ci)
                 {
-                    CorrenteTile tile = col.GetComponent<CorrenteTile>();
-                    if (tile != null)
+                    correnteAtual = null;
+                    inversoraState = InversoraState.None;
+                }
+            }
+        }
+
+        private void GerenciarCorrentezas()
+        {
+            if (emAwaHorizontal)
+            {
+                meuRB.velocity = new Vector2(forcaEmpurraoHorizontal * direcaoEmpurraoHorizontal, meuRB.velocity.y);
+                meuRB.gravityScale = 0f;
+            }
+            else if (awaHDir)
+            {
+                meuRB.velocity = new Vector2(forcaEmpurraoHorizontal, meuRB.velocity.y);
+                meuRB.gravityScale = 0f;
+            }
+            else if (awaHEs)
+            {
+                meuRB.velocity = new Vector2(-forcaEmpurraoHorizontal, meuRB.velocity.y);
+                meuRB.gravityScale = 0f;
+            }
+
+            if (emAwaVertical)
+            {
+                meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical * direcaoEmpurraoVertical);
+            }
+            else if (awaVSub)
+            {
+                meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical);
+            }
+            else if (awaVBai)
+            {
+                meuRB.velocity = new Vector2(meuRB.velocity.x, -forcaEmpurraoVertical);
+            }
+        } //Gerencia as correntezas (Antigas)
+
+        
+        private void RaycastCheckGround()
+        {
+            // Define a origem utilizando a borda inferior central do Collider
+            Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, raycastDistance, groundLayer);
+
+            if (hit.collider != null && meuRB.velocity.y <= 0)
+            {
+                if (!noChao)
+                {
+                    pulosDisponiveis = totalPulos;
+                    noChao = true;
+                    meuAnim.SetBool("isGrounded", false);
+                    //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
+                    dashDisponives = 1;
+                }
+            }
+            else
+            {
+                noChao = false;
+                meuAnim.SetBool("isGrounded", true);
+            }
+
+        } //Joga um raio para baixo para checar se estamos no chão
+
+        private void OnDrawGizmosSelected()
+        {
+            if (playerCollider != null)
+            {
+                Vector2 rayOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y + 0.01f);
+                Gizmos.color = Color.red;
+                Gizmos.DrawLine(rayOrigin, rayOrigin + Vector2.down * raycastDistance);
+            }
+        } //Cria um feedback visual do Raycast
+
+        public void Die()
+        {
+            transform.position = startPosition;
+            eggCount = 0; // Reset player's egg count
+            Debug.Log("Player died. Egg count reset.");
+            ResetCorrenteInversorasPosicao();
+            ResetCorrenteInversoras();
+
+            // Tell EggManager to respawn the eggs.
+            if (EggManager.instance != null)
+            {
+                EggManager.instance.RespawnEggs();
+            }
+        } //Mata o Player
+
+        private void ResetCorrenteInversorasPosicao()
+        {
+            GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
+            foreach (GameObject obj in inversoras)
+            {
+                CorrenteInversora ci = obj.GetComponent<CorrenteInversora>();
+                if (ci != null)
+                {
+                    ci.ResetPosicao();
+                }
+            }
+        }
+
+        private void ResetCorrenteInversoras()
+        {
+            GameObject[] inversoras = GameObject.FindGameObjectsWithTag("CorrenteInversora");
+            foreach (GameObject obj in inversoras)
+            {
+                CorrenteInversora ci = obj.GetComponent<MeuJogo.Correntes.CorrenteInversora>();
+                if (ci != null)
+                {
+                    ci.ResetPosicao();
+                    ci.ResetDirecao();
+                }
+            }
+        }
+
+        public void AddEgg()
+        {
+            Debug.Log("antes: " + eggCount);
+            eggCount++;   
+
+            if (eggCount >= 3)
+            {
+                Debug.Log("dentro do if: " + eggCount);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+
+        } //Adiciona ovos na contagem e pula para a proxima fase
+
+        private void UpdateCurrentCorrenteTile()
+        {
+            // Este método processa o sistema de correnteza normal (2.0)
+            Vector2 boxSize = new Vector2(0.5f, 0.5f);
+            Collider2D[] results = Physics2D.OverlapBoxAll(transform.position, boxSize, 0f, correntezaLayer);
+
+            if (results.Length > 0)
+            {
+                CorrenteTile bestTile = null;
+                float bestDistance = Mathf.Infinity;
+                foreach (Collider2D col in results)
+                {
+                    if (col.CompareTag("Correnteza"))
                     {
-                        float d = Vector2.Distance(transform.position, tile.transform.position);
-                        if (d < bestDistance)
+                        CorrenteTile tile = col.GetComponent<CorrenteTile>();
+                        if (tile != null)
                         {
-                            bestDistance = d;
-                            bestTile = tile;
+                            float d = Vector2.Distance(transform.position, tile.transform.position);
+                            if (d < bestDistance)
+                            {
+                                bestDistance = d;
+                                bestTile = tile;
+                            }
                         }
                     }
                 }
-            }
-            if (bestTile != null)
-            {
-                if (currentCorrenteTile != bestTile)
+                if (bestTile != null)
                 {
-                    currentCorrenteTile = bestTile;
-                    correntezaState = CorrentezaState.Aligning;
-                    currentDirection = bestTile.ObterDirecao();
-                    currentSpeed = bestTile.velocidade;
+                    if (currentCorrenteTile != bestTile)
+                    {
+                        currentCorrenteTile = bestTile;
+                        correntezaState = CorrentezaState.Aligning;
+                        currentDirection = bestTile.ObterDirecao();
+                        currentSpeed = bestTile.velocidade;
+                    }
+                    isInCorrenteza = true;
+                    return;
                 }
-                isInCorrenteza = true;
-                return;
             }
+            currentCorrenteTile = null;
+            isInCorrenteza = false;
         }
-        currentCorrenteTile = null;
-        isInCorrenteza = false;
+    
     }
-   
-}
