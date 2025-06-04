@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MeuJogo.Correntes;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float raycastDistance = 0.1f;
 
     private Rigidbody2D meuRB;
-    private Animator meuAnim;
+    public Animator meuAnim;
     private CapsuleCollider2D playerCollider;
 
     [SerializeField] private float tempoDesaceleracaoVertical = 0.3f;
@@ -131,7 +132,8 @@ public class PlayerController : MonoBehaviour
 
         GerenciarCorrentezas();
         UpdateCurrentCorrenteTile();
-        // Detecção do chão usando Raycast
+        meuAnim.SetFloat("xVelocity", Mathf.Abs(meuRB.velocity.x));
+        meuAnim.SetFloat("yVelocity", Mathf.Abs(meuRB.velocity.y));
         RaycastCheckGround();
     } //Função chamada a cada frame
 
@@ -182,7 +184,7 @@ public class PlayerController : MonoBehaviour
             {
                 meuRB.gravityScale = 0f;
                 meuRB.velocity = invDir * correnteAtual.velocidade;
-                meuAnim.SetBool("Movendo", false);
+               // meuAnim.SetBool("Movendo", false);
                 return;
             }
         }
@@ -223,7 +225,7 @@ public class PlayerController : MonoBehaviour
             {
                 meuRB.gravityScale = 0f;
                 meuRB.velocity = currentDirection * currentSpeed;
-                meuAnim.SetBool("Movendo", false);
+                //meuAnim.SetBool("Movendo", false);
                 return;
             }
         }
@@ -231,6 +233,7 @@ public class PlayerController : MonoBehaviour
         UpdatePhysicsMaterial();
         MovimentoSuave();
         AtualizarGravidade();
+       
     } //Função chamada a cada alguns frames
 
     private void UpdatePhysicsMaterial()
@@ -257,7 +260,7 @@ public class PlayerController : MonoBehaviour
             // Aplica o movimento da corrente
             meuRB.velocity = currentDirection * currentSpeed;
             // Opcional: Atualiza a animação para um estado inerte, se desejar.
-            meuAnim.SetBool("Movendo", false);
+            //meuAnim.SetBool("Movendo", false);
             return;
         }
 
@@ -272,7 +275,7 @@ public class PlayerController : MonoBehaviour
             Mathf.Lerp(currentSpeedLocal, currentSpeedLocal + newSpeed, accelRate * Time.fixedDeltaTime),
             meuRB.velocity.y
         );
-        meuAnim.SetBool("Movendo", Mathf.Abs(moveInput) > 0);
+       // meuAnim.SetBool("Movendo", Mathf.Abs(moveInput) > 0);
     } //Movimentação do player
 
     private void AtualizarGravidade()
@@ -361,11 +364,14 @@ public class PlayerController : MonoBehaviour
         {
             meuRB.velocity += new Vector2(0, velv * 2f);
             pulosDisponiveis--;
-            noChao = false;
-            meuAnim.SetBool("NoChao", false);
+            noChao = false;            
             puloMobile = false;
-        }
+        }      
+        
+
     } //Pulo do Player
+
+   
 
     private void CheckDash()
     {
@@ -574,7 +580,7 @@ public class PlayerController : MonoBehaviour
             {
                 pulosDisponiveis = totalPulos;
                 noChao = true;
-                meuAnim.SetBool("NoChao", true);
+                meuAnim.SetBool("isGrounded", false);
                 //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
                 dashDisponives = 1;
             }
@@ -582,7 +588,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             noChao = false;
-            meuAnim.SetBool("NoChao", false);
+            meuAnim.SetBool("isGrounded", true);
         }
 
     } //Joga um raio para baixo para checar se estamos no chão
