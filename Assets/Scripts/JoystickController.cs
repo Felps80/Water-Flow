@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,9 +9,23 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
 
     private Vector2 inputVector;
 
-    public float Horizontal => inputVector.x;
-    public float Vertical => inputVector.y;
+    [SerializeField]
+    private float deadZone = 0.1f; // Evita movimentações falsas
+
+    [SerializeField]
+    private float returnSpeed = 10f; // Velocidade de retorno suave
+
+    public float Horizontal => ProcessedDirection.x;
+    public float Vertical => ProcessedDirection.y;
     public Vector2 Direction => new Vector2(Horizontal, Vertical);
+
+    private Vector2 ProcessedDirection
+    {
+        get
+        {
+            return inputVector.magnitude < deadZone ? Vector2.zero : inputVector;
+        }
+    }
 
     private void Start()
     {
@@ -21,26 +36,19 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 pos;
-        // Converte a posição do toque/mouse para o espaço local do joystick
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            joystickBackground, 
-            eventData.position, 
-            eventData.pressEventCamera, 
+            joystickBackground,
+            eventData.position,
+            eventData.pressEventCamera,
             out pos))
         {
-            // Normaliza a posição dentro do raio do joystick
-            pos.x = (pos.x / joystickBackground.sizeDelta.x);
-            pos.y = (pos.y / joystickBackground.sizeDelta.y);
+            // Normaliza para -1 a 1
+            pos.x = (pos.x / joystickBackground.sizeDelta.x) * 2;
+            pos.y = (pos.y / joystickBackground.sizeDelta.y) * 2;
 
-            // Multiplica por 2 para alcançar o centro
-            inputVector = new Vector2(pos.x * 2, pos.y * 2);
-            inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
+            inputVector = pos.magnitude > 1.0f ? pos.normalized : pos;
 
-            // Move a alça do joystick
-            joystickHandle.anchoredPosition = new Vector2(
-                inputVector.x * (joystickBackground.sizeDelta.x / 2),
-                inputVector.y * (joystickBackground.sizeDelta.y / 2)
-            );
+            UpdateHandlePosition();
         }
     }
 
@@ -52,6 +60,31 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
     public void OnPointerUp(PointerEventData eventData)
     {
         inputVector = Vector2.zero;
-        joystickHandle.anchoredPosition = Vector2.zero;
+        // Não zera a alça imediatamente, deixa o Update suavizar
+    }
+
+    private void Update()
+    {
+        if (inputVector != Vector2.zero)
+        {
+            UpdateHandlePosition();
+        }
+        else if (joystickHandle.anchoredPosition != Vector2.zero)
+        {
+            // Suaviza o retorno ao centro
+            joystickHandle.anchoredPosition = Vector2.Lerp(
+                joystickHandle.anchoredPosition,
+                Vector2.zero,
+                Time.deltaTime * returnSpeed
+            );
+        }
+    }
+
+    private void UpdateHandlePosition()
+    {
+        joystickHandle.anchoredPosition = new Vector2(
+            inputVector.x * (joystickBackground.sizeDelta.x / 2),
+            inputVector.y * (joystickBackground.sizeDelta.y / 2)
+        );
     }
 }

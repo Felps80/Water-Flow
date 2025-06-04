@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
     {
         meuRB = GetComponent<Rigidbody2D>();
         meuAnim = GetComponent<Animator>();
-        playerCollider = GetComponent<BoxCollider2D>();
+        playerCollider = GetComponent<BoxCollider2D>(); 
         pulosDisponiveis = totalPulos;
         startPosition = transform.position;
        
@@ -459,6 +459,7 @@ public class PlayerController : MonoBehaviour
     public void PularMobile()
     {
         puloMobile = true;
+        Debug.Log("Pulou");
     }
 
     public void DashMobile()
