@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4815857525167846203}
   - component: {fileID: 4815857525167846205}
   - component: {fileID: 4815857525167846206}
-  - component: {fileID: 2280234176999237132}
   - component: {fileID: 5047748954749183633}
   m_Layer: 0
   m_Name: Player
@@ -172,21 +171,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2280234176999237132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4815857525167846207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd05fbc5aac0ec49b1f0e3e7525a795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystickHandle: {fileID: 722307106098562286, guid: 48958ebcc32662c478b1fb997a401135, type: 3}
-  deadZone: 0.1
-  returnSpeed: 10
 --- !u!61 &5047748954749183633
 BoxCollider2D:
   m_ObjectHideFlags: 0

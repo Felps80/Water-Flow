@@ -10086,7 +10086,7 @@ PrefabInstance:
       objectReference: {fileID: 544994403}
     - target: {fileID: 5727494551435014765, guid: 3b0adab6e988eed45a9e5d1890480f5b, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 7.8
+      value: 8.04
       objectReference: {fileID: 0}
     - target: {fileID: 5727494551435014766, guid: 3b0adab6e988eed45a9e5d1890480f5b, type: 3}
       propertyPath: m_BoundingShape2D
@@ -10231,7 +10231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 11.25
+      value: 11.71875
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_RootOrder
@@ -11397,7 +11397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3131058033610569568, guid: d06687c0732836145869895dc8a141b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 3131058033610569568, guid: d06687c0732836145869895dc8a141b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11514,6 +11514,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PularMobile
       objectReference: {fileID: 0}
+    - target: {fileID: 8882968553910435640, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+      propertyPath: joystickHandle
+      value: 
+      objectReference: {fileID: 1538299902}
     - target: {fileID: 8882968554059003625, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11604,6 +11608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+--- !u!224 &1538299902 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8882968553210217932, guid: 93188481f412b3d41afc77ea5eb1ea0f, type: 3}
+  m_PrefabInstance: {fileID: 1538299901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1623511014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4848753674213228266, guid: 8f205d4a682c9ad45bc04965f3234a44, type: 3}
