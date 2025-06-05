@@ -42,22 +42,12 @@ public class PlayerController : MonoBehaviour
     private bool puloMobile = false;
     private bool dashMobile = false;
     public JoystickController joystick;
+
+    private Coroutine dashCoroutine;
     #endregion
 
     #region Variáveis de Correnteza
-    [SerializeField] private float forcaEmpurraoHorizontal = 3f;
-    [SerializeField] private float forcaEmpurraoVertical = 3f;
-
-    private bool emAwaHorizontal = false;
-    private bool emAwaVertical = false;
-    private int direcaoEmpurraoHorizontal = -1;
-    private int direcaoEmpurraoVertical = 1;
-
-    private bool awaHDir = false;
-    private bool awaHEs = false;
-    private bool awaVSub = false;
-    private bool awaVBai = false;
-
+   
     private float desaceleracaoTimer = 0f;
     private bool desacelerandoVertical = false;
     #endregion
@@ -105,7 +95,15 @@ public class PlayerController : MonoBehaviour
     public int eggCount = 0;
 
     //Posição inicial do player
-    Vector2 startPosition;
+    public Vector2 startPosition;
+
+    private bool Dead = false;
+
+    public float horizontalDeathForce = 5f; // Força horizontal de repulsão
+    public float verticalDeathForce = 10f;  // Força vertical de repulsão
+
+    //Variavel de Death
+
 
 
     void Start()
@@ -115,7 +113,11 @@ public class PlayerController : MonoBehaviour
         playerCollider = GetComponent<BoxCollider2D>(); 
         pulosDisponiveis = totalPulos;
         startPosition = transform.position;
-       
+        Dead = false;
+        dashDisponives = 1;
+        playerCollider.enabled = true;
+
+
 
     } //Função chamada no começo
 
@@ -123,20 +125,47 @@ public class PlayerController : MonoBehaviour
     {
         if (PauseMenu.GameIsPaused) return;
 
-        if (!isDashing)
+        if (!Dead)
         {
-            ControleMovimento();
-            Pulando();
-            CheckDash();
-            dashCooldownRestante = Mathf.Max(0f, (lastDashTime + dashCooldown) - Time.time);
-            //Debug.Log("Cooldown do Dash: " + dashCooldownRestante.ToString("F2") + " segundos");
+            if (!isDashing)
+            {
+                ControleMovimento();
+                Pulando();
+                CheckDash();
+                dashCooldownRestante = Mathf.Max(0f, (lastDashTime + dashCooldown) - Time.time);
+                //Debug.Log("Cooldown do Dash: " + dashCooldownRestante.ToString("F2") + " segundos");
+            }
+        }
+        
+        UpdateCurrentCorrenteTile();      
+        RaycastCheckGround();
+
+        float speed = Mathf.Abs(meuRB.velocity.x);
+        meuAnim.SetFloat("Speed", speed);
+
+        if (!noChao)
+        {
+            if (meuRB.velocity.y > 0.1f)
+            {
+                meuAnim.SetBool("isJumping", true);
+                meuAnim.SetBool("isFalling", false);
+            }
+            else if (meuRB.velocity.y < -0.1f)
+            {
+                meuAnim.SetBool("isJumping", false);
+                meuAnim.SetBool("isFalling", true);
+            }
+        }
+        else
+        {
+            meuAnim.SetBool("isJumping", false);
+            meuAnim.SetBool("isFalling", false);
         }
 
-        GerenciarCorrentezas();
-        UpdateCurrentCorrenteTile();
-        meuAnim.SetFloat("xVelocity", Mathf.Abs(meuRB.velocity.x));
-        meuAnim.SetFloat("yVelocity", Mathf.Abs(meuRB.velocity.y));
-        RaycastCheckGround();
+        // Atualiza dash
+        meuAnim.SetBool("isDashing", isDashing);
+
+      
     } //Função chamada a cada frame
 
     void FixedUpdate()
@@ -256,7 +285,7 @@ public class PlayerController : MonoBehaviour
 
     void ApplyStopThreshold()
         {
-            if (Mathf.Abs(meuRB.velocity.x) < 0.05f)
+            if (Mathf.Abs(meuRB.velocity.x) < 0.12f)
             {
                 meuRB.velocity = new Vector2(0, meuRB.velocity.y);
             }
@@ -265,6 +294,9 @@ public class PlayerController : MonoBehaviour
 
     private void MovimentoSuave()
     {
+        if (!PodeMover())
+            return;
+
         // Se estiver na correnteza, ignora o controle do jogador
         if (isInCorrenteza)
         {
@@ -277,7 +309,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // Caso contrário, executa o movimento normal
         float targetSpeed = moveInput * velh;
         float currentSpeedLocal = meuRB.velocity.x;
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
@@ -288,32 +319,19 @@ public class PlayerController : MonoBehaviour
             Mathf.Lerp(currentSpeedLocal, currentSpeedLocal + newSpeed, accelRate * Time.fixedDeltaTime),
             meuRB.velocity.y
         );
-        // meuAnim.SetBool("Movendo", Mathf.Abs(moveInput) > 0);
     } //Movimentação do player
 
     private void AtualizarGravidade()
     {
-        if (emAwaVertical)
+        // Quando o player não estiver no chão...
+        if (!noChao)
         {
-            meuRB.gravityScale = -forcaEmpurraoVertical * direcaoEmpurraoVertical;
-            fallTimer = 0f;
-        }
-        else if (awaVSub)
-        {
-            meuRB.gravityScale = -forcaEmpurraoVertical;
-            fallTimer = 0f;
-        }
-        else if (awaVBai)
-        {
-            meuRB.gravityScale = forcaEmpurraoVertical;
-            fallTimer = 0f;
-        }
-        else if (!noChao)
-        {
-            // Se estiver caindo, acumula o tempo antes de aplicar o fall multiplier
+            // Se estiver caindo (velocidade vertical negativa)
             if (meuRB.velocity.y < 0)
             {
                 fallTimer += Time.deltaTime;
+
+                // Após passar do delay, aumenta a gravidade para acelerar a queda
                 if (fallTimer >= fallDelay)
                 {
                     meuRB.gravityScale = 2f;
@@ -325,17 +343,19 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                // Se estiver subindo, reinicia o timer e mantém a gravidade 1
+                // Se estiver subindo, reinicia o timer e mantém a gravidade padrão
                 fallTimer = 0f;
                 meuRB.gravityScale = 1f;
             }
         }
         else
         {
+            // Se estiver no chão, reinicia o timer e usa a gravidade padrão
             fallTimer = 0f;
             meuRB.gravityScale = 1f;
         }
 
+        // Aplicando a desaceleração vertical, se estiver ativa:
         if (desacelerandoVertical)
         {
             desaceleracaoTimer += Time.deltaTime;
@@ -349,10 +369,13 @@ public class PlayerController : MonoBehaviour
                 meuRB.gravityScale = 1f;
             }
         }
-    } //Aumenta a gravidade no topo
+    }
 
     private void ControleMovimento()
     {
+        if (!PodeMover())
+            return;
+
         moveInput = Input.GetAxisRaw("Horizontal");
         if (joystick != null && Mathf.Abs(joystick.Horizontal) > 0.2f)
         {
@@ -365,13 +388,17 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }  //Controle de movimento 
 
+    private bool PodeMover()
+    {
+        return !Dead;
+    }
+
     private void Pulando()
     {
-        bool puloPressionado = (Input.GetKeyDown(KeyCode.Space) || puloMobile);
-
-        // Não permite pulo em correntezas
-        if (emAwaHorizontal || awaHDir || awaHEs || emAwaVertical || awaVSub || awaVBai)
+        if (Dead)
             return;
+
+        bool puloPressionado = (Input.GetKeyDown(KeyCode.Space) || puloMobile);
 
         if (puloPressionado && pulosDisponiveis > 0)
         {
@@ -388,17 +415,12 @@ public class PlayerController : MonoBehaviour
 
     private void CheckDash()
     {
+        if (Dead)
+            return;
+
         // Se estiver na correnteza, não permite dash
         if (isInCorrenteza || correnteAtual != null)
             return;
-
-
-
-
-        if (emAwaHorizontal || emAwaVertical || awaHDir || awaHEs || awaVSub || awaVBai)
-        {
-            return;
-        }
 
         if (dashDisponives <= 0)
             return;
@@ -434,8 +456,8 @@ public class PlayerController : MonoBehaviour
             }
 
             dashMobile = false;
-            dashDisponives--;
-            StartCoroutine(Dash());
+            dashDisponives--;           
+            dashCoroutine = StartCoroutine(Dash());
         }
     } //Checa para ver se pode dar dash
 
@@ -443,6 +465,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator Dash()
     {
         isDashing = true;
+        meuAnim.SetBool("isDashing", true);
         lastDashTime = Time.time;
         float startTime = Time.time;
 
@@ -454,6 +477,7 @@ public class PlayerController : MonoBehaviour
 
         meuRB.velocity = Vector2.zero;
         isDashing = false;
+        meuAnim.SetBool("isDashing", false);
     } //Contador de temopo do dash
 
     public void PularMobile()
@@ -522,6 +546,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -549,39 +575,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void GerenciarCorrentezas()
-    {
-        if (emAwaHorizontal)
-        {
-            meuRB.velocity = new Vector2(forcaEmpurraoHorizontal * direcaoEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-        else if (awaHDir)
-        {
-            meuRB.velocity = new Vector2(forcaEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-        else if (awaHEs)
-        {
-            meuRB.velocity = new Vector2(-forcaEmpurraoHorizontal, meuRB.velocity.y);
-            meuRB.gravityScale = 0f;
-        }
-
-        if (emAwaVertical)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical * direcaoEmpurraoVertical);
-        }
-        else if (awaVSub)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, forcaEmpurraoVertical);
-        }
-        else if (awaVBai)
-        {
-            meuRB.velocity = new Vector2(meuRB.velocity.x, -forcaEmpurraoVertical);
-        }
-    } //Gerencia as correntezas (Antigas)
-
-
+    
     private void RaycastCheckGround()
     {
         // Define a origem utilizando a borda inferior central do Collider
@@ -593,16 +587,14 @@ public class PlayerController : MonoBehaviour
             if (!noChao)
             {
                 pulosDisponiveis = totalPulos;
-                noChao = true;
-                meuAnim.SetBool("isGrounded", false);
+                noChao = true;             
                 //Debug.Log("Detectado chão: " + hit.collider.name + " - Pulos reiniciados: " + pulosDisponiveis);
                 dashDisponives = 1;
             }
         }
         else
         {
-            noChao = false;
-            meuAnim.SetBool("isGrounded", true);
+            noChao = false;           
         }
 
     } //Joga um raio para baixo para checar se estamos no chão
@@ -617,20 +609,64 @@ public class PlayerController : MonoBehaviour
         }
     } //Cria um feedback visual do Raycast
 
-    public void Die()
+    public void Die(Vector2 damageSourcePosition)
     {
+
+        if (Dead)
+            return;
+
+        Dead = true;
+
+        // Cancela dash se houver
+        if (dashCoroutine != null)
+        {
+            StopCoroutine(dashCoroutine);
+            dashCoroutine = null;
+        }
+        isDashing = false;
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = false;
+        }
+
+        meuRB.velocity = Vector2.zero;
+
+        Vector2 damageDirection = ((Vector2)transform.position - damageSourcePosition).normalized;
+        Vector2 bounceForce = new Vector2(damageDirection.x * horizontalDeathForce, verticalDeathForce);
+        meuRB.AddForce(bounceForce, ForceMode2D.Impulse);
+
+        meuAnim.SetTrigger("DeathTrigger");
+       
+               
+    } //Mata o Player
+
+    public void Respawn()
+    {
+        // Reseta o estado do player
         transform.position = startPosition;
-        eggCount = 0; // Reset player's egg count
-        Debug.Log("Player died. Egg count reset.");
+        eggCount = 0;
         ResetCorrenteInversorasPosicao();
         ResetCorrenteInversoras();
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = true;
+        }
+
+        Dead = false;
+        meuAnim.Play("Idle");
+        dashDisponives = 1;
+        pulosDisponiveis = totalPulos;
 
         // Tell EggManager to respawn the eggs.
         if (EggManager.instance != null)
         {
             EggManager.instance.RespawnEggs();
         }
-    } //Mata o Player
+
+    }
+    
 
     private void ResetCorrenteInversorasPosicao()
     {

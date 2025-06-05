@@ -7,10 +7,11 @@ public class SpikeScript : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Verifica se o jogador colidiu com os espinhos
-        if (collision.collider.GetComponent<PlayerController>())
+        PlayerController player = collision.collider.GetComponent<PlayerController>();
+        if (player != null)
         {
-            collision.collider.GetComponent<PlayerController>().Die();
+            // Agora passa a posição deste spike como fonte de dano
+            player.Die(transform.position);
         }
     }
 }

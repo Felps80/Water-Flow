@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     private RectTransform joystickBackground;
-    private RectTransform joystickHandle;
+    [SerializeField] private RectTransform joystickHandle;
 
     private Vector2 inputVector;
 
@@ -30,7 +30,14 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
     private void Start()
     {
         joystickBackground = GetComponent<RectTransform>();
-        joystickHandle = transform.GetChild(0).GetComponent<RectTransform>();
+        if (joystickHandle == null)
+        {
+            Debug.LogError("Joystick Handle não atribuído no Inspector!");
+        }
+        else
+        {
+            Debug.Log("Joystick Handle atribuído: " + joystickHandle.name);
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -65,6 +72,12 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
 
     private void Update()
     {
+        if (joystickHandle == null)
+        {
+            Debug.LogWarning("Joystick Handle não está atribuído.");
+            return;
+        }
+
         if (inputVector != Vector2.zero)
         {
             UpdateHandlePosition();

@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2138226807
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 300324201, guid: 64d7b1be097dc394d9d98faae14463e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   velh: 5.6
   velv: 3.1
   acceleration: 7
-  decceleration: 9
+  decceleration: 8
   velPower: 1.5
   totalPulos: 1
   groundLayer:
@@ -139,8 +139,6 @@ MonoBehaviour:
   dashCooldown: 0.8
   dashCooldownRestante: 0
   joystick: {fileID: 641009072294467198, guid: c0b757c10081d0e48b0d0e0d24bfa38f, type: 3}
-  forcaEmpurraoHorizontal: 3
-  forcaEmpurraoVertical: 3
   alignmentSpeed: 5
   alignmentThreshold: 0.2
   correntezaLayer:
@@ -150,6 +148,9 @@ MonoBehaviour:
   airMaterial: {fileID: 6200000, guid: e6ea400356613a0488225fd62f09539a, type: 2}
   fallDelay: 0
   eggCount: 0
+  startPosition: {x: 0, y: 0}
+  horizontalDeathForce: 7
+  verticalDeathForce: 7
 --- !u!95 &4815857525167846206
 Animator:
   serializedVersion: 5
@@ -183,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd05fbc5aac0ec49b1f0e3e7525a795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystickHandle: {fileID: 722307106098562286, guid: 48958ebcc32662c478b1fb997a401135, type: 3}
   deadZone: 0.1
   returnSpeed: 10
 --- !u!61 &5047748954749183633
@@ -198,7 +200,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007673025, y: -0.008894056}
+  m_Offset: {x: -0.007673025, y: 0.010624744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.55, y: 0.17}
@@ -209,5 +211,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36260366, y: 0.32221192}
+  m_Size: {x: 0.36260366, y: 0.28317434}
   m_EdgeRadius: 0
