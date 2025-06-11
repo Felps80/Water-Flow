@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1132370864}
+    - target: {fileID: 8947399522231344760, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+      propertyPath: pauseButtonUI
+      value: 
+      objectReference: {fileID: 422465805}
     - target: {fileID: 8947399522231344761, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -535,6 +539,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+--- !u!1 &422465805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2304620156411988746, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+  m_PrefabInstance: {fileID: 422465804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &423660023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11901,7 +11910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 9.140625
+      value: 8.953125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_BackGroundColor.a
@@ -11961,11 +11970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00002670288
+      value: -0.91698647
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0001642704
+      value: -0.046405077
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z

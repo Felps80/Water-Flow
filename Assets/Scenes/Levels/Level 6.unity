@@ -1858,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3131058033610569568, guid: d06687c0732836145869895dc8a141b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5000002
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3131058033977922885, guid: d06687c0732836145869895dc8a141b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14228,7 +14228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 9.140625
+      value: 8.953125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_RootOrder
@@ -14236,11 +14236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000031471252
+      value: 0.000032424927
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00017023087
+      value: 0.04703927
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14345,6 +14345,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1051140860}
+    - target: {fileID: 8947399522231344760, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+      propertyPath: pauseButtonUI
+      value: 
+      objectReference: {fileID: 8947399521930164545}
     - target: {fileID: 8947399522231344761, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14498,3 +14502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2424f30026fef4cb9eaefb5487e61c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8947399521930164545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2304620156411988746, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+  m_PrefabInstance: {fileID: 8947399521930164543}
+  m_PrefabAsset: {fileID: 0}

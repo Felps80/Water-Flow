@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     [Header("Pause Menu Panel")]
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject pauseButtonUI;
     private static PauseMenu instance;
 
     void Awake()
@@ -21,6 +22,38 @@ public class PauseMenu : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        // Remove a inscrição para evitar erros
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Reatribua as referências se necessário. Por exemplo, se o painel de pause estiver na nova cena,
+        // você pode buscá-lo por nome ou tag:
+        if (pauseMenuUI == null)
+        {
+            // Exemplo: supondo que o painel de pause na nova cena tenha o nome "PauseMenuUI".
+            pauseMenuUI = GameObject.Find("Pause Menu");
+        }
+        // Se estiver utilizando o botão de pause na UI:
+        if (pauseButtonUI == null)
+        {
+            pauseButtonUI = GameObject.Find("Pause 1"); // ajuste para o nome correto
+        }
+
+        // Se for o caso, reative a visibilidade do botão de pause ao trocar de cena.
+        if (pauseButtonUI != null)
+        {
+            pauseButtonUI.SetActive(true);
+        }
+
+        // Se o jogo estava pausado na cena anterior, garanta que ele esteja retomado na nova cena:
+        Resume();
     }
 
     // Update is called once per frame
@@ -43,6 +76,8 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        if (pauseButtonUI != null)
+            pauseButtonUI.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -50,6 +85,9 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
+        if (pauseButtonUI != null)
+            pauseButtonUI.SetActive(false);
+        Time.timeScale = 0f;
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -75,13 +113,17 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
+        if (pauseButtonUI != null)
+            pauseButtonUI.SetActive(true);
     }
 
     public void PauseButton()
     {
         Pause();
-        pauseMenuUI.SetActive(true);
-        Debug.Log("Apertou");
+        if (pauseMenuUI != null)
+            pauseMenuUI.SetActive(true);
+
+        //Debug.Log("Apertou");
     }
 
 }

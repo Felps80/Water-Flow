@@ -44,10 +44,14 @@ public class PlayerController : MonoBehaviour
     public JoystickController joystick;
 
     private Coroutine dashCoroutine;
+
+    private bool dashBlocked = false;              // Flag que indica que dashes estão temporariamente bloqueados
+    [SerializeField] private float dashBlockedDuration = 0.5f; // Tempo (em segundos) de bloqueio após colisão com corrente
+
     #endregion
 
     #region Variáveis de Correnteza
-   
+
     private float desaceleracaoTimer = 0f;
     private bool desacelerandoVertical = false;
     #endregion
@@ -415,7 +419,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckDash()
     {
-        if (Dead)
+        if (Dead || dashBlocked)
             return;
 
         // Se estiver na correnteza, não permite dash
@@ -480,6 +484,28 @@ public class PlayerController : MonoBehaviour
         meuAnim.SetBool("isDashing", false);
     } //Contador de temopo do dash
 
+    private void StopDash()
+    {
+        if (isDashing)
+        {
+            if (dashCoroutine != null)
+            {
+                StopCoroutine(dashCoroutine);
+                dashCoroutine = null;
+            }
+            isDashing = false;
+            meuRB.velocity = Vector2.zero;
+            meuAnim.SetBool("isDashing", false);
+        }
+    }
+
+    private IEnumerator BlockDashCoroutine()
+    {
+        dashBlocked = true;
+        yield return new WaitForSeconds(dashBlockedDuration);
+        dashBlocked = false;
+    }
+
     public void PularMobile()
     {
         puloMobile = true;
@@ -514,6 +540,8 @@ public class PlayerController : MonoBehaviour
         // Ao entrar em um tile de CorrenteInversora, atualiza a referência e reseta o estado de alinhamento
         if (other.CompareTag("CorrenteInversora"))
         {
+            StopDash();
+            StartCoroutine(BlockDashCoroutine());
             CorrenteInversora novaCorrente = other.GetComponent<CorrenteInversora>();
             if (novaCorrente != null)
             {
@@ -525,6 +553,8 @@ public class PlayerController : MonoBehaviour
         // Ao entrar em um tile de Correnteza (normal)
         if (other.CompareTag("Correnteza"))
         {
+            StopDash();
+            StartCoroutine(BlockDashCoroutine());
             CorrenteTile tileNova = other.GetComponent<CorrenteTile>();
             if (tileNova != null)
             {

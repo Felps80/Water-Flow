@@ -10515,6 +10515,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1096739192}
+    - target: {fileID: 8947399522231344760, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+      propertyPath: pauseButtonUI
+      value: 
+      objectReference: {fileID: 1096739193}
     - target: {fileID: 8947399522231344761, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10671,6 +10675,11 @@ MonoBehaviour:
 --- !u!1 &1096739192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8947399522498087367, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+  m_PrefabInstance: {fileID: 1096739190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1096739193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2304620156411988746, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
   m_PrefabInstance: {fileID: 1096739190}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1115975445
@@ -11392,7 +11401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 9.140625
+      value: 8.953125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -11416,11 +11425,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000031471252
+      value: 0.000032424927
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00016975403
+      value: 0.047038794
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11457,6 +11466,14 @@ PrefabInstance:
     - target: {fileID: 8386347914966503688, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_CropFrame
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386347914966503688, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
+      propertyPath: m_RefResolutionX
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386347914966503688, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
+      propertyPath: m_RefResolutionY
+      value: 540
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}

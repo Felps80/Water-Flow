@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503684, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: orthographic size
-      value: 6.15625
+      value: 8.953125
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_RootOrder
@@ -819,11 +819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0549574
+      value: -0.91698265
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8442707
+      value: -0.046414852
       objectReference: {fileID: 0}
     - target: {fileID: 8386347914966503687, guid: 10d8594fb52a1274fb44d729a01f0328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13861,6 +13861,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1792475075}
+    - target: {fileID: 8947399522231344760, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+      propertyPath: pauseButtonUI
+      value: 
+      objectReference: {fileID: 1792475076}
     - target: {fileID: 8947399522231344761, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14021,6 +14025,11 @@ MonoBehaviour:
 --- !u!1 &1792475075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8947399522498087367, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
+  m_PrefabInstance: {fileID: 1792475073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1792475076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2304620156411988746, guid: 78925a07103db9e4c96e6730b77c8c99, type: 3}
   m_PrefabInstance: {fileID: 1792475073}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1926743894
