@@ -17,7 +17,8 @@ public class PauseMenu : MonoBehaviour
         // If an instance exists and it’s not this, destroy this duplicate.
         if (instance != null && instance != this)
         {
-            //Destroy(gameObject);
+           
+            Destroy(gameObject);
             return;
         }
         instance = this;
@@ -33,17 +34,20 @@ public class PauseMenu : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+       
         // Reatribua as referências se necessário. Por exemplo, se o painel de pause estiver na nova cena,
         // você pode buscá-lo por nome ou tag:
         if (pauseMenuUI == null)
         {
             // Exemplo: supondo que o painel de pause na nova cena tenha o nome "PauseMenuUI".
             pauseMenuUI = GameObject.Find("Pause Menu");
+          
         }
         // Se estiver utilizando o botão de pause na UI:
         if (pauseButtonUI == null)
         {
             pauseButtonUI = GameObject.Find("Pause 1"); // ajuste para o nome correto
+           
         }
 
         // Se for o caso, reative a visibilidade do botão de pause ao trocar de cena.
@@ -59,7 +63,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (GameIsPaused)
             {
