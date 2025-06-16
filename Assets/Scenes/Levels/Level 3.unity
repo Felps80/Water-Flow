@@ -571,6 +571,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1664171197}
     - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
+      propertyPath: ghostPrefab
+      value: 
+      objectReference: {fileID: 8591907626123421155, guid: 867beb84170370e428c0c0dd31a259ac, type: 3}
+    - target: {fileID: 4815857525167846205, guid: 8b0ab4a85eefc0f4db11123d65bb3391, type: 3}
       propertyPath: raycastDistance
       value: 0.3
       objectReference: {fileID: 0}

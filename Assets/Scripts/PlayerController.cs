@@ -83,8 +83,15 @@ public class PlayerController : MonoBehaviour
     private enum InversoraState { None, Aligning, Pushing }
     private InversoraState inversoraState = InversoraState.None;
 
-    #endregion 
+    #endregion
 
+    #region Variaveis Effects
+
+    public GameObject ghostPrefab;       // Referência para o prefab do ghost
+    public float ghostLifetime = 0.3f;     // Tempo de vida do fantasma (deve ser igual ou menor que fadeDuration)
+    public float ghostSpawnInterval = 0.05f; // Intervalo entre spawn de cada fantasma
+
+    #endregion
 
     //Diferentes Materiais
     [SerializeField] private PhysicsMaterial2D groundMaterial;  // Assign a material with some friction in the Inspector
@@ -402,7 +409,7 @@ public class PlayerController : MonoBehaviour
         if (Dead)
             return;
 
-        bool puloPressionado = (Input.GetKeyDown(KeyCode.Space) || puloMobile);
+        bool puloPressionado = (Input.GetKeyDown(KeyCode.C) || puloMobile);
 
         if (puloPressionado && pulosDisponiveis > 0)
         {
@@ -430,7 +437,7 @@ public class PlayerController : MonoBehaviour
             return;
 
 
-        if ((Input.GetKey(KeyCode.LeftShift) || dashMobile) && Time.time > lastDashTime + dashCooldown)
+        if ((Input.GetKey(KeyCode.X) || dashMobile) && Time.time > lastDashTime + dashCooldown)
         {
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
@@ -462,6 +469,11 @@ public class PlayerController : MonoBehaviour
             dashMobile = false;
             dashDisponives--;           
             dashCoroutine = StartCoroutine(Dash());
+
+            if (!isDashing) // Só inicia a coroutine se o dash estiver realmente começando
+            {
+                StartCoroutine(DashGhostTrail());
+            }
         }
     } //Checa para ver se pode dar dash
 
@@ -472,6 +484,7 @@ public class PlayerController : MonoBehaviour
         meuAnim.SetBool("isDashing", true);
         lastDashTime = Time.time;
         float startTime = Time.time;
+        StartCoroutine(DashGhostTrail());
 
         while (Time.time < startTime + dashDuration)
         {
@@ -482,6 +495,8 @@ public class PlayerController : MonoBehaviour
         meuRB.velocity = Vector2.zero;
         isDashing = false;
         meuAnim.SetBool("isDashing", false);
+
+        StopDashGhostTrail();
     } //Contador de temopo do dash
 
     private void StopDash()
@@ -710,6 +725,10 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    private void StopDashGhostTrail()
+    {
+        StopCoroutine(DashGhostTrail());
+    }
 
     private void ResetCorrenteInversoras()
     {
@@ -737,6 +756,21 @@ public class PlayerController : MonoBehaviour
         }
 
     } //Adiciona ovos na contagem e pula para a proxima fase
+
+    private IEnumerator DashGhostTrail()
+    {
+        while (isDashing)  // Supondo que isDashing é verdadeiro durante todo o dash
+        {
+            // Instancia uma cópia do ghost com a mesma posição e rotação do jogador
+            if (ghostPrefab != null)
+            {
+                GameObject ghost = Instantiate(ghostPrefab, transform.position, transform.rotation);
+                // Opcional: ajuste o sprite, cor ou ordem de renderização se necessário
+                Destroy(ghost, ghostLifetime);  // Garante a destruição caso o script GhostFade não a destrua
+            }
+            yield return new WaitForSeconds(ghostSpawnInterval);
+        }
+    }
 
     private void UpdateCurrentCorrenteTile()
     {

@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4815857525167846207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.877, y: -1.193, z: 0}
-  m_LocalScale: {x: 2, y: 1.9102, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -138,11 +138,15 @@ MonoBehaviour:
   dashCooldown: 0.8
   dashCooldownRestante: 0
   joystick: {fileID: 641009072294467198, guid: c0b757c10081d0e48b0d0e0d24bfa38f, type: 3}
+  dashBlockedDuration: 0.5
   alignmentSpeed: 5
   alignmentThreshold: 0.2
   correntezaLayer:
     serializedVersion: 2
     m_Bits: 256
+  ghostPrefab: {fileID: 8591907626123421155, guid: 867beb84170370e428c0c0dd31a259ac, type: 3}
+  ghostLifetime: 0.3
+  ghostSpawnInterval: 0.05
   groundMaterial: {fileID: 6200000, guid: 4fcc2de5d9b139f4faef45f0d6e5ff0c, type: 2}
   airMaterial: {fileID: 6200000, guid: e6ea400356613a0488225fd62f09539a, type: 2}
   fallDelay: 0
