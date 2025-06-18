@@ -309,14 +309,12 @@ public class PlayerController : MonoBehaviour
             return;
 
         // Se estiver na correnteza, ignora o controle do jogador
-        if (isInCorrenteza)
+        if (isInCorrenteza && currentCorrenteTile != null)
         {
-            // Garante que a gravidade não o faça cair
+            // [MODIFIED] Zera a gravidade enquanto estiver sob efeito da corrente (alinhamento + empuxo)
             meuRB.gravityScale = 0f;
-            // Aplica o movimento da corrente
+            // Aplica o movimento da corrente com base na direção e velocidade fixadas
             meuRB.velocity = currentDirection * currentSpeed;
-            // Opcional: Atualiza a animação para um estado inerte, se desejar.
-            //meuAnim.SetBool("Movendo", false);
             return;
         }
 
@@ -573,15 +571,8 @@ public class PlayerController : MonoBehaviour
             CorrenteTile tileNova = other.GetComponent<CorrenteTile>();
             if (tileNova != null)
             {
-                if (currentCorrenteTile != null && currentCorrenteTile != tileNova &&
-                    tileNova.ObterDirecao() != currentDirection)
-                {
-                    currentCorrenteTile = tileNova;
-                    correntezaState = CorrentezaState.Aligning;
-                    currentDirection = tileNova.ObterDirecao();
-                    currentSpeed = tileNova.velocidade;
-                }
-                else if (currentCorrenteTile == null)
+                //  Apenas fixa o tile se ainda não estiver definido.
+                if (currentCorrenteTile == null)
                 {
                     currentCorrenteTile = tileNova;
                     isInCorrenteza = true;
@@ -589,10 +580,28 @@ public class PlayerController : MonoBehaviour
                     currentDirection = tileNova.ObterDirecao();
                     currentSpeed = tileNova.velocidade;
                 }
+                // Se currentCorrenteTile já estiver fixado, ignoramos o novo tile.
             }
         }
 
-        
+
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Correnteza"))
+        {
+            CorrenteTile tile = other.GetComponent<CorrenteTile>();
+            if (tile != null && currentCorrenteTile == null)
+            {
+                // [ADDED] Caso o player permaneça sobre um tile de corrente e ainda não haja referência, fixa-o.
+                currentCorrenteTile = tile;
+                isInCorrenteza = true;
+                correntezaState = CorrentezaState.Aligning;
+                currentDirection = tile.ObterDirecao();
+                currentSpeed = tile.velocidade;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -600,12 +609,15 @@ public class PlayerController : MonoBehaviour
         // Saída de tile de Correnteza (normal)
         if (other.CompareTag("Correnteza"))
         {
-            isInCorrenteza = false;
-            correntezaState = CorrentezaState.None;
-            currentCorrenteTile = null;
-            currentDirection = Vector2.zero;
-            currentSpeed = 0f;
-            meuRB.gravityScale = 1f;
+            if (currentCorrenteTile != null && other.gameObject == currentCorrenteTile.gameObject)
+            {
+                isInCorrenteza = false;
+                correntezaState = CorrentezaState.None;
+                currentCorrenteTile = null;
+                currentDirection = Vector2.zero;
+                currentSpeed = 0f;
+                meuRB.gravityScale = 1f;
+            }
         }
 
         // Saída de tile de CorrenteInversora: limpa a referência e reseta o estado de inversora
